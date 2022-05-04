@@ -1,0 +1,38 @@
+.m-primary-nav {
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 0 39px;
+
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: $white;
+    padding: 35px 0;
+
+
+    &:hover {
+      color: $white;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: $primary;
+        content: '';
+
+      }
+    }
+  }
+}

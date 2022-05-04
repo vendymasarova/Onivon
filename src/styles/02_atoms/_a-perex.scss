@@ -1,0 +1,9 @@
+.a-perex {
+ font-size: $font-size-lg;
+ color: $white;
+ line-height: 35px;
+
+  &--sm {
+    max-width: 24.0625rem;
+  }
+}

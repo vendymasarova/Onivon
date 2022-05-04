@@ -1,0 +1,11 @@
+.a-action-link {
+  background-color: $primary;
+  color: $white;
+  text-decoration: none;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-transform: uppercase;
+}

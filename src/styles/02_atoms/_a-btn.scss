@@ -1,0 +1,64 @@
+.a-btn {
+  @include media-breakpoint-down(sm) {
+    padding: 1.25rem 2.3125rem;
+  }
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+  padding: 2rem 2.3125rem;
+  border-radius: 0.9375rem;
+  font-weight: $font-weight-bold;
+  font-size: 0.875rem;
+  transition: all .3s ease;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $white;
+    color: $primary;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+
+  &--secondary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+
+  &--outline-primary {
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+
+    &:hover {
+      color: $secondary;
+      border-color: 1px solid $secondary;
+    }
+  }
+
+  &--outline-secondary {
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      color: $secondary;
+      border-color: 1px solid $secondary;
+    }
+  }
+
+  svg {
+    display: block;
+  }
+}
