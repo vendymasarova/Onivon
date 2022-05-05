@@ -1,0 +1,13 @@
+$list: a, b, c, d, e, f;
+$lastItem: first($list);
+
+.a-container {
+  @include make-container();
+  // @debug nth($container-max-widths, length($container-max-widths));
+  @debug length($container-max-widths);
+  @each $breakpoint, $value in $container-max-widths {
+    &--#{$breakpoint} {
+      max-width: $value;
+    }
+  }
+}
