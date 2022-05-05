@@ -1,11 +1,22 @@
 .a-action-link {
+  @include media-breakpoint-down(lg) {
+    width: 50%;
+    margin: auto;
+  }
+
   background-color: $primary;
   color: $white;
-  text-decoration: none;
+  text-decoration: if($link-decoration == none, null, none);
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $white;
+    background: $secondary;
+  }
 }

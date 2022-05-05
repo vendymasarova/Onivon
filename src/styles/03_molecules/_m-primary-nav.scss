@@ -1,24 +1,41 @@
 .m-primary-nav {
-  margin-left: auto;
 
   &__list {
+    @include list-unstyled;
+
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      min-width: 100%;
+    }
+
     display: flex;
-    margin-bottom: 0;
-    padding: 0;
+    flex-direction: row;
+    background-color: transparent;
+    min-height: 100%;
+    align-items: center;
   }
 
   &__item {
-    list-style: none;
-    padding: 0 39px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      min-width: 100%;
+    }
 
+    list-style: none;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   &__link {
     position: relative;
     text-decoration: none;
     color: $white;
-    padding: 35px 0;
-
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     &:hover {
       color: $white;
@@ -31,7 +48,6 @@
         height: 5px;
         background-color: $primary;
         content: '';
-
       }
     }
   }

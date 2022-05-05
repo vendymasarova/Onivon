@@ -27,18 +27,17 @@
   }
 
   &__title {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-up(lg) {
       font-size: 8rem;
     }
-
-    @include media-breakpoint-down(md) {
-      font-size: 4rem;
+    @include media-breakpoint-up(xl) {
+      font-size: 10rem;
     }
 
-    font-size: 10rem;
+    font-size: 4rem;
     color: $white;
 
-    span {
+    > span {
 
       @supports (-webkit-text-stroke: 1px $white) {
         color: transparent;

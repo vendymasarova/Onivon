@@ -16,7 +16,7 @@
   transition: all .3s ease;
   border: none;
   outline: none;
-  text-decoration: none;
+  text-decoration: if($link-decoration == none, null, none);
 
   &--primary {
     background-color: $white;
@@ -24,6 +24,7 @@
 
     &:hover {
       background-color: $secondary;
+      color: $white;
     }
   }
 
@@ -53,8 +54,10 @@
     border: 1px solid $white;
 
     &:hover {
-      color: $secondary;
-      border-color: 1px solid $secondary;
+      color: $white;
+      background-color: $secondary;
+      border: 1px solid $secondary;
+
     }
   }
 
