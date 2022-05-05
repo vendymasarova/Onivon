@@ -1,4 +1,5 @@
 .m-primary-nav {
+  $root: &;
 
   &__list {
     @include list-unstyled;
@@ -16,6 +17,7 @@
     background-color: transparent;
     min-height: 100%;
     align-items: center;
+    margin-bottom: 0;
   }
 
   &__item {
@@ -26,26 +28,52 @@
     }
 
     list-style: none;
-    padding-left: 39px;
-    padding-right: 39px;
+    padding: 39px;
+    position: relative;
+
+    &:hover {
+
+      > ul {
+        display: block;
+      }
+    }
   }
 
   &__link {
-    position: relative;
-    text-decoration: none;
-    color: $white;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      text-decoration: none;
+      color: $white;
+      padding-top: 39px;
+      padding-bottom: 39px;
+
+      &:hover {
+        color: $white;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background-color: $primary;
+          content: '';
+        }
+      }
+    }
+
+    width: 100%;
+    color: $primary;
 
     &:hover {
-      color: $white;
+      color: $secondary !important;
 
       &::after {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 5px;
+        height: 100%;
+        width: 5px;
         background-color: $primary;
         content: '';
       }

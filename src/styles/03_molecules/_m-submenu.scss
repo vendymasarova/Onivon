@@ -1,0 +1,30 @@
+.m-submenu {
+
+  @include list-unstyled;
+  background: $white;
+  border-radius: 15px;
+  letter-spacing: 0;
+  padding: 40px 55px;
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  transform: translateX(50%);
+
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__link {
+    color: $primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

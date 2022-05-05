@@ -1,6 +1,7 @@
 @import "hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .a-hamburger {
+  $root: &;
   @include media-breakpoint-up(lg) {
     display: none;
   }
@@ -16,9 +17,33 @@
   z-index: 15;
   transition: all 0.3s ease;
 
+  &__inner {
+    background-color: $white;
+    height: 1px;
+
+    &::before,
+    &::after {
+      height: 1px;
+      background-color: $white;
+    }
+  }
+
   &:hover {
     background-color: $secondary;
     opacity: 1 !important;
+  }
+
+  &.is-active {
+    background-color: $white;
+
+    #{$root}__inner {
+      background-color: $primary;
+
+      &::before,
+      &::after {
+        background-color: $primary;
+      }
+    }
   }
 }
 
