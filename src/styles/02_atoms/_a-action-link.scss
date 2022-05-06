@@ -16,7 +16,14 @@
     }
 
     &:hover {
-      background-color: transparent;
+      color: $secondary;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+
+    &:hover {
+      color: $white;
+      background-color: $secondary;
     }
   }
 
@@ -30,9 +37,4 @@
   width: 100px;
   text-transform: uppercase;
   transition: all 0.3s ease;
-
-  &:hover {
-    color: $white;
-    background-color: $secondary;
-  }
 }

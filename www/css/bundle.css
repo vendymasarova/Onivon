@@ -93,7 +93,8 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-family: "Syncopate", "Open Sans", sans-serif;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -7379,13 +7380,27 @@ progress {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Syncopate";
+  src: url("../fonts/Syncopate-Bold.woff2") format("woff2"), url("../fonts/Syncopate-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Syncopate";
+  src: url("../fonts/Syncopate-Regular.woff2") format("woff2"), url("../fonts/Syncopate-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .a-btn {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   text-transform: uppercase;
-  font-family: "Syncopate", sans-serif;
+  font-family: "Syncopate", "Open Sans", sans-serif;
   padding: 2rem 2.3125rem;
   border-radius: 0.9375rem;
   font-weight: 700;
@@ -7438,12 +7453,9 @@ progress {
   display: block;
 }
 
-.a-title {
-  font-family: "Syncopate", sans-serif;
-  font-weight: 400 !important;
-}
 .a-title > span {
   display: block;
+  font-weight: 700 !important;
 }
 @supports (-webkit-text-stroke: 1px #000) {
   .a-title > span {
@@ -8354,7 +8366,7 @@ progress {
 }
 
 .a-scroll-link {
-  font-family: "Syncopate", sans-serif;
+  font-family: "Syncopate", "Open Sans", sans-serif;
   text-decoration: none;
   font-weight: 700;
   color: #fff;
@@ -8402,12 +8414,14 @@ progress {
     content: "";
   }
   .a-action-link:hover {
-    background-color: transparent;
+    color: #770623;
   }
 }
-.a-action-link:hover {
-  color: #fff;
-  background-color: #770623;
+@media (min-width: 992px) {
+  .a-action-link:hover {
+    color: #fff;
+    background-color: #770623;
+  }
 }
 
 .a-brand {
@@ -8459,7 +8473,7 @@ progress {
   }
 }
 @media (min-width: 992px) {
-  .m-primary-nav__item:hover .m-primary-nav__submenu {
+  .m-primary-nav__item:hover > ul {
     display: block;
   }
 }
@@ -8492,7 +8506,7 @@ progress {
     font-size: 1rem;
   }
   .m-primary-nav__link:hover {
-    color: #fff;
+    color: white;
   }
   .m-primary-nav__link:hover::after {
     position: absolute;
@@ -8504,6 +8518,11 @@ progress {
     content: "";
   }
 }
+@media (max-width: 991.98px) {
+  .m-primary-nav__link:hover {
+    color: #770623;
+  }
+}
 .m-primary-nav__link::before {
   position: absolute;
   top: 0;
@@ -8511,9 +8530,6 @@ progress {
   left: 0;
   right: 0;
   content: "";
-}
-.m-primary-nav__link:hover {
-  color: #770623;
 }
 .m-primary-nav__link.open .m-primary-nav__submenu {
   display: block;
@@ -8541,6 +8557,9 @@ progress {
     padding-top: 20px;
     transform: translateX(0);
   }
+  .m-submenu.open {
+    display: block;
+  }
 }
 .m-submenu__item {
   padding-top: 10px;
@@ -8553,36 +8572,36 @@ progress {
   }
 }
 .m-submenu__item:last-child() {
-  padding-bottoM: 0;
+  padding-bottom: 0;
 }
 .m-submenu__link {
   position: relative;
   white-space: nowrap;
   text-decoration: none;
-  padding-left: 65px;
   padding-bottom: 5px;
   padding-top: 5px;
+  transition: all 0.3s ease;
 }
 @media (max-width: 991.98px) {
   .m-submenu__link {
     color: #2C2C2C;
+    padding-left: 65px;
+  }
+  .m-submenu__link:hover {
+    font-weight: 700;
+  }
+  .m-submenu__link:hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #A52143;
+    content: "";
   }
 }
 .m-submenu__link:hover {
   color: #770623;
-  font-weight: 700;
-}
-.m-submenu__link:hover::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 5px;
-  background-color: #A52143;
-  content: "";
-}
-.m-submenu.open {
-  display: block;
 }
 
 .o-hello {
@@ -8710,13 +8729,16 @@ progress {
 .o-header {
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   min-height: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.o-header.stickyNav {
+  background-color: #2C2C2C;
 }
 .o-header__colapse {
   display: flex;

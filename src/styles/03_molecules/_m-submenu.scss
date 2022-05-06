@@ -6,8 +6,11 @@
     padding: 0;
     padding-top: 20px;
     transform: translateX(0);
-  }
 
+    &.open {
+      display: block;
+    }
+  }
   @include list-unstyled;
   background: $white;
   border-radius: 15px;
@@ -26,7 +29,7 @@
     }
 
     &:last-child() {
-      padding-bottoM: 0;
+      padding-bottom: 0;
     }
 
     padding-top: 10px;
@@ -36,32 +39,32 @@
   &__link {
     @include media-breakpoint-down(lg) {
       color: $gray-800;
+      padding-left: 65px;
+
+      &:hover {
+        font-weight: $font-weight-bold;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 5px;
+          background-color: $primary;
+          content: '';
+        }
+      }
     }
 
     position: relative;
     white-space: nowrap;
     text-decoration: none;
-    padding-left: 65px;
     padding-bottom: 5px;
     padding-top: 5px;
+    transition: all 0.3s ease;
 
     &:hover {
       color: $secondary;
-      font-weight: $font-weight-bold;
-
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 5px;
-        background-color: $primary;
-        content: '';
-      }
     }
-  }
-
-  &.open {
-    display: block;
   }
 }

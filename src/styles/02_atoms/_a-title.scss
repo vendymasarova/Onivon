@@ -1,10 +1,10 @@
 .a-title {
-  font-family: $font-family-secondary;
-  font-weight: $font-weight-normal !important;
+  // font-family: $font-family-secondary;
+  // font-weight: $font-weight-normal !important;
 
   > span {
     display: block;
-    // font-weight: $font-weight-bold;
+    font-weight: $font-weight-bold !important;
 
     @supports (-webkit-text-stroke: 1px $black) {
       color: transparent;
@@ -13,7 +13,6 @@
 
     @supports not (-webkit-text-stroke: 1px $black) {
       color: $black;
-      // text-shadow: 0 0 2px rgba($black, 1);
     }
   }
 }
