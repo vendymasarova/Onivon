@@ -1,13 +1,17 @@
-$list: a, b, c, d, e, f;
-$lastItem: first($list);
+$containerLastIndex: length($container-max-widths);
+$containerIndex: 0;
 
 .a-container {
   @include make-container();
-  // @debug nth($container-max-widths, length($container-max-widths));
-  @debug length($container-max-widths);
+
   @each $breakpoint, $value in $container-max-widths {
-    &--#{$breakpoint} {
+    $containerIndex: $containerIndex + 1;
+    @if $containerLastIndex == $containerIndex {
       max-width: $value;
+    } @else {
+      &--#{$breakpoint} {
+        max-width: $value;
+      }
     }
   }
 }
