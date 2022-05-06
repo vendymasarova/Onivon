@@ -11,9 +11,9 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/bundle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"> -->
 
         <meta name="theme-color" content="#fafafa">
     </head>
@@ -22,17 +22,17 @@
             <a href="#" class="a-brand">
                 <img src="./img/brand-icon.svg" alt="">
             </a>
-            <button class="a-hamburger hamburger hamburger--spin" type="button" data-target="#primaryNav" aria-controls="primaryNav" aria-label="Toggle mobile navigation">
+            <button class="a-hamburger hamburger hamburger--spin js--hamburger" type="button" data-target="#primaryNav" aria-controls="primaryNav" aria-label="Toggle mobile navigation">
                 <span class="hamburger-box">
                   <span class="hamburger-inner a-hamburger__inner"></span>
                 </span>
             </button>
-            <div class="o-header__colapse">
-                <nav class="m-primary-nav" id="primaryNav">
+            <div class="o-header__colapse" id="primaryNav">
+                <nav class="m-primary-nav">
                     <ul class="m-primary-nav__list">
                         <li class="m-primary-nav__item">
-                            <a href="#" class="m-primary-nav__link">Služby</a>
-                            <ul class="m-submenu m-primary-nav__submenu">
+                            <a href="#" class="m-primary-nav__link js--has-submenu" aria-controls="submenu" aria-label="Toggle submenu">Služby</a>
+                            <ul class="m-submenu m-primary-nav__submenu js--submenu" id="submenu">
                                 <li class="m-submenu__item">
                                     <a href="#" class="m-submenu__link">Nástrojárna</a>
                                 </li>
@@ -56,9 +56,12 @@
                         <li class="m-primary-nav__item">
                             <a href="#" class="m-primary-nav__link">Kontakt</a>
                         </li>
+                        <li class="m-primary-nav__item m-primary-nav__item--action">
+                            <a href="#" class="a-action-link">cs</a>
+                        </li>
                     </ul>
                 </nav>
-                <a href="#" class="a-action-link">cs</a>
+                <!-- <a href="#" class="a-action-link">cs</a> -->
             </div>
         </header>
 

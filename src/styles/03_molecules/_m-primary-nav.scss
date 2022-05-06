@@ -25,17 +25,40 @@
       padding-top: 30px;
       padding-bottom: 30px;
       min-width: 100%;
+      padding-left: 0;
+
+      &::after {
+        position: absolute;
+        content:"";
+        height: 1px;
+        width: 90%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $gray-200;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:hover {
+
+        #{$root}__submenu {
+          display: block;
+        }
+      }
     }
 
     list-style: none;
     padding: 39px;
     position: relative;
 
-    &:hover {
 
-      > ul {
-        display: block;
+    &--action {
+      @include media-breakpoint-down(lg) {
+        padding-top: 30px;
+        padding-left: 65px;
       }
+      padding: 0;
     }
   }
 
@@ -46,6 +69,9 @@
       color: $white;
       padding-top: 39px;
       padding-bottom: 39px;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 1rem;
 
       &:hover {
         color: $white;
@@ -62,21 +88,30 @@
       }
     }
 
+    font-size: 20px;
+    position: unset;
     width: 100%;
-    color: $primary;
+    color: $gray-800;
+    padding-left: 65px;
+    text-decoration: if($link-decoration == none, null, none);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+    }
 
     &:hover {
-      color: $secondary !important;
-
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 5px;
-        background-color: $primary;
-        content: '';
-      }
+      color: $secondary;
     }
+
+    &.open #{$root}__submenu {
+      display: block;
+    }
+
+
   }
 }

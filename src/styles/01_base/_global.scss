@@ -1,17 +1,36 @@
-.container {
-    @include make-container();
-    max-width: map-get($grid-breakpoints, "xxl");
-  
-    &--sm {
-      max-width: map-get($grid-breakpoints, "sm") !important;
-    }
-    &--md {
-      max-width: map-get($grid-breakpoints, "md") !important;
-    }
-    &--lg {
-      max-width: map-get($grid-breakpoints, "lg") !important;
-    }
-    &--xl {
-      max-width: map-get($grid-breakpoints, "xl") !important;
-    }
-  }
+// .container {
+//     @include make-container();
+//     max-width: map-get($grid-breakpoints, "xxl");
+
+//     &--sm {
+//       max-width: map-get($grid-breakpoints, "sm") !important;
+//     }
+//     &--md {
+//       max-width: map-get($grid-breakpoints, "md") !important;
+//     }
+//     &--lg {
+//       max-width: map-get($grid-breakpoints, "lg") !important;
+//     }
+//     &--xl {
+//       max-width: map-get($grid-breakpoints, "xl") !important;
+//     }
+//   }
+
+// @import url(../fonts/Syncopate-Bold.woff2);
+// @font-face {
+//   font-family: 'Syncopate';
+//   src: url('Syncopate-Bold.woff2') format('woff2'),
+//       url('Syncopate-Bold.woff') format('woff');
+//   font-weight: $font-weight-bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Syncopate';
+//   src: url('Syncopate-Regular.woff2') format('woff2'),
+//       url('Syncopate-Regular.woff') format('woff');
+//   font-weight: $font-weight-normal;
+//   font-style: normal;
+//   font-display: swap;
+// }

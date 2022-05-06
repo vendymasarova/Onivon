@@ -1,7 +1,23 @@
 .a-action-link {
   @include media-breakpoint-down(lg) {
-    width: 50%;
-    margin: auto;
+    color: $gray-800;
+    background-color: transparent;
+    min-height: auto;
+    justify-content: flex-start;
+    font-size: 20px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: "";
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   background-color: $primary;
@@ -17,6 +33,6 @@
 
   &:hover {
     color: $white;
-    background: $secondary;
+    background-color: $secondary;
   }
 }

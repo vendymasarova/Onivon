@@ -26,7 +26,7 @@ import stylelint from 'rollup-plugin-stylelint';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: './src/scripts/main.ts',
+  input: './src/scripts/main.js',
   output: {
     file: './www/js/bundle.esm.js',
     format: 'esm',

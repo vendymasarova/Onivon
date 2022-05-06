@@ -437,7 +437,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 $link-color:                              $primary;
 $link-decoration:                         underline;
 $link-shade-percentage:                   20%;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage);
 $link-hover-decoration:                   null;
 
 $stretched-link-pseudo-element:           after;

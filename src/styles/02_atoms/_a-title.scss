@@ -1,9 +1,10 @@
 .a-title {
   font-family: $font-family-secondary;
+  font-weight: $font-weight-normal !important;
 
   > span {
     display: block;
-    font-weight: $font-weight-bold;
+    // font-weight: $font-weight-bold;
 
     @supports (-webkit-text-stroke: 1px $black) {
       color: transparent;
