@@ -5,22 +5,22 @@
     right: 0;
     padding: 0;
     padding-top: 20px;
-    transform: translateX(0);
-
-    &.open {
-      display: block;
-    }
+    top: 0 !important;
+    transform: translateX(0) !important;
   }
   @include list-unstyled;
   background: $white;
   border-radius: 15px;
   letter-spacing: 0;
   padding: 40px 55px;
-  display: none;
   position: absolute;
-  top: 100px;
+  top: 100px !important;
   right: 50%;
-  transform: translateX(50%);
+  transform: translateX(-25%) !important;
+
+  &.open {
+    display: block;
+  }
 
   &__item {
     @include media-breakpoint-down(lg) {

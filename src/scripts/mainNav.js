@@ -33,11 +33,11 @@ const mainNav = () => {
     }
    }
 
-   const openSubmenu = () => {
+  //  const openSubmenu = () => {
 
-    let nextSibling = itemWithSubmenu.nextElementSibling;
-    nextSibling.classList.toggle('open');
-   }
+  //   let nextSibling = itemWithSubmenu.nextElementSibling;
+  //   nextSibling.classList.toggle('open');
+  //  }
 
   if(hamburger){
 
@@ -53,7 +53,7 @@ const mainNav = () => {
     if(itemWithSubmenu) {
 
       itemWithSubmenu.addEventListener(('click'), () => {
-        openSubmenu();
+        // openSubmenu();
 
       })
     }

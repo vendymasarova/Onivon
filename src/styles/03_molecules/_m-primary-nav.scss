@@ -1,4 +1,8 @@
 .m-primary-nav {
+  @include media-breakpoint-down(lg) {
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
   $root: &;
 
   &__list {
@@ -37,15 +41,6 @@
         background-color: $gray-200;
       }
     }
-    @include media-breakpoint-up(lg) {
-
-      &:hover {
-
-        > ul {
-          display: block;
-        }
-      }
-    }
 
     list-style: none;
     padding: 39px;
@@ -74,7 +69,7 @@
       &:hover {
         color: white;
 
-        &::after {
+        &::before {
           position: absolute;
           top: 0;
           left: 0;
@@ -108,7 +103,7 @@
       content: "";
     }
 
-    &.open #{$root}__submenu {
+    &.open {
       display: block;
     }
   }
