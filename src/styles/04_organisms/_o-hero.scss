@@ -23,6 +23,7 @@
 
     font-size: 5rem;
     color: $white;
+    margin-bottom: 50px;
 
     > span {
       @supports (-webkit-text-stroke: 1px $white) {
