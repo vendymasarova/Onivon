@@ -1,9 +1,10 @@
 .a-more-link {
   @include media-breakpoint-up(xl) {
-   margin-left: -50%;
+   margin-left: -73%;
   }
   @include media-breakpoint-down(xl) {
-   margin-left: -30%;
+   margin-left: -80%;
+   margin-top: 20px;
   }
 
   display: inline-flex;

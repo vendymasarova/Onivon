@@ -8764,14 +8764,15 @@ progress {
   transition: all 0.3s ease;
   gap: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .a-more-link {
-    margin-left: -50%;
+    margin-left: -73%;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .a-more-link {
-    margin-left: -33%;
+    margin-left: -80%;
+    margin-top: 20px;
   }
 }
 .a-more-link span {
@@ -8979,7 +8980,6 @@ progress {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   text-align: center;
   min-height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -8995,19 +8995,28 @@ progress {
   .m-product-box__perex {
     max-width: 246px;
   }
-  .m-product-box__actions {
-    margin-top: auto;
-  }
   .m-product-box__about {
     margin-bottom: 150px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .m-product-box {
+    flex-direction: column;
   }
 }
 .m-product-box:hover .m-product-box__figure {
   z-index: 22;
   opacity: 1;
 }
+.m-product-box:hover .m-product-box__actions {
+  z-index: 23;
+}
+.m-product-box:hover .m-product-box__body {
+  z-index: 23;
+}
 .m-product-box__body {
-  z-index: 99;
+  z-index: 20;
+  transition: all 0.3s ease;
 }
 .m-product-box__about {
   display: flex;
@@ -9033,7 +9042,7 @@ progress {
   color: #fff;
 }
 .m-product-box__actions {
-  margin-top: 20px;
+  margin-top: auto;
 }
 .m-product-box__figure {
   position: absolute;
@@ -9059,7 +9068,7 @@ progress {
   right: 0;
   left: 0;
   content: "";
-  background-image: linear-gradient(0deg, #273455 0%, rgba(39, 52, 85, 0) 100%);
+  background-image: linear-gradient(0deg, #273455 0%, rgba(39, 52, 85, 0) 20%);
 }
 
 .o-hello {
@@ -9188,7 +9197,7 @@ progress {
 .o-header {
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9235,8 +9244,9 @@ progress {
 }
 @media (min-width: 1200px) {
   .o-list__col {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 0.25;
+    max-width: 0.25;
+    width: 25%;
   }
 }
 /*# sourceMappingURL=bundle.css.map */

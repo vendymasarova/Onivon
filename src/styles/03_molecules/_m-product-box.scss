@@ -1,5 +1,6 @@
 .m-product-box {
   $root: &;
+
   @include media-breakpoint-up(xl) {
     flex-direction: column;
     align-items: center;
@@ -11,13 +12,12 @@
       max-width: 246px;
     }
 
-    &__actions {
-      margin-top: auto;
-    }
-
     &__about {
       margin-bottom: 150px
     }
+  }
+  @include media-breakpoint-down(xl) {
+    flex-direction: column
   }
 
   position: relative;
@@ -27,7 +27,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   text-align: center;
   min-height: 100%;
   border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
@@ -38,10 +37,20 @@
       z-index: 22;
       opacity: 1;
     }
+
+    #{$root}__actions {
+      z-index: 23;
+    }
+
+    #{$root}__body {
+      z-index: 23;
+    }
   }
 
+
   &__body {
-    z-index: 99;
+    z-index: 20;
+    transition: all 0.3s ease;
   }
 
   &__about {
@@ -73,7 +82,7 @@
   }
 
   &__actions {
-    margin-top: 20px;
+    margin-top: auto;
   }
 
   &__figure {
@@ -101,7 +110,7 @@
       right: 0;
       left: 0;
       content: "";
-      background-image: linear-gradient(0deg, $blue 0%, rgba($blue, 0) 100%);
+      background-image: linear-gradient(0deg, $blue 0%, rgba($blue, 0) 20%);
     }
   }
 }
