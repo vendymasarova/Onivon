@@ -1,0 +1,19 @@
+.a-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+   a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+}

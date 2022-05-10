@@ -1,0 +1,30 @@
+.o-section {
+  @include media-breakpoint-up(lg) {
+    &__title {
+      font-size: 5rem;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  &--light {
+    background-color: $gray-200;
+    color: $gray-800;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  padding: 9.375rem 0;
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5rem;
+  }
+}

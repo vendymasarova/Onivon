@@ -75,7 +75,7 @@ $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
-$light:         $gray-600;
+$light:         $gray-200;
 $dark:          $gray-900;
 // scss-docs-end theme-color-variables
 
@@ -434,10 +434,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 //
 // Style anchor elements.
 
-$link-color:                              $primary;
+$link-color:                              $white;
 $link-decoration:                         underline;
 $link-shade-percentage:                   20%;
-// $link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-color:                        $primary;
 $link-hover-decoration:                   null;
 
 $stretched-link-pseudo-element:           after;

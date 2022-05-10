@@ -1,0 +1,28 @@
+.m-adress-box {
+  padding-top: 1.25rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: $primary;
+  color: $white;
+  max-width: 440px;
+  min-height: 568px;
+
+  &__header {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: $font-weight-bold;
+  }
+
+  &__title {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+}

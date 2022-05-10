@@ -1,6 +1,7 @@
 .o-hello {
   padding: 235px 0;
   position: relative;
+  color: $white;
 
   &__figure {
     position: absolute;
@@ -35,7 +36,6 @@
     }
 
     font-size: 4rem;
-    color: $white;
 
     > span {
 

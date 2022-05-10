@@ -1,6 +1,12 @@
 .a-perex {
+  @include media-breakpoint-up(lg) {
+    &--column {
+      column-count: 2;
+      column-gap: 40px;
+    }
+  }
+
  font-size: $font-size-lg;
- color: $white;
  line-height: 35px;
 
   &--sm {
