@@ -1,4 +1,5 @@
 .m-product-box {
+  $root: &;
   @include media-breakpoint-up(xl) {
     flex-direction: column;
     align-items: center;
@@ -14,7 +15,7 @@
       margin-top: auto;
     }
 
-    &__body {
+    &__about {
       margin-bottom: 150px
     }
   }
@@ -26,20 +27,34 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
   min-height: 100%;
   border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
 
+  &:hover {
+
+    #{$root}__figure {
+      z-index: 22;
+      opacity: 1;
+    }
+  }
+
   &__body {
+    z-index: 99;
+  }
+
+  &__about {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__icon {
     margin-bottom: 5.625rem;
 
     img {
-      max-width: 220px;
+      width: 160px;
       height: auto;
     }
   }
@@ -48,12 +63,17 @@
     font-size: 1.5625rem;
     color: $white;
     font-weight: $font-weight-bold;
+    max-width: 250px;
   }
 
   &__perex {
     font-size: 1rem;
     line-height: 25px;
     color: $white;
+  }
+
+  &__actions {
+    margin-top: 20px;
   }
 
   &__figure {
@@ -63,6 +83,8 @@
     bottom: 0;
     right: 0;
     z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
 
     img {
       display: block;
@@ -70,11 +92,6 @@
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
-      opacity: 0;
-
-      &:hover {
-        opacity: 1;
-      }
     }
 
     &::before {
@@ -84,9 +101,7 @@
       right: 0;
       left: 0;
       content: "";
-      background-image: linear-gradient(270deg, $blue 0%, rgba($blue, 0) 100%);
+      background-image: linear-gradient(0deg, $blue 0%, rgba($blue, 0) 100%);
     }
-
-
   }
 }

@@ -1,9 +1,10 @@
 .m-primary-nav {
+  $root: &;
+
   @include media-breakpoint-down(lg) {
     overflow: scroll;
     margin-bottom: 20px;
   }
-  $root: &;
 
   &__list {
     @include list-unstyled;

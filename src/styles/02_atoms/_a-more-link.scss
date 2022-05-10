@@ -1,4 +1,11 @@
 .a-more-link {
+  @include media-breakpoint-up(xl) {
+   margin-left: -50%;
+  }
+  @include media-breakpoint-down(xl) {
+   margin-left: -30%;
+  }
+
   display: inline-flex;
   font-size: 13px;
   text-transform: uppercase;
@@ -10,16 +17,19 @@
   gap: 15px;
 
   span {
-    max-width: 0.01px;
+    // max-width: 0.01px;
     overflow: hidden;
     white-space: nowrap;
     color: $white;
     transition: all 0.3s ease;
+    opacity: 0;
   }
 
   &:hover {
+    margin-left: 0;
+
     span {
-      max-width: 100%;
+      opacity: 1;
     }
   }
 
