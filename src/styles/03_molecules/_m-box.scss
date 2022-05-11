@@ -1,7 +1,8 @@
-.m-adress-box {
+.m-box {
   padding-top: 1.25rem;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 2.25rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
   background-color: $primary;
   color: $white;
   max-width: 440px;
@@ -14,6 +15,10 @@
   }
 
   &__dots {
+    @include media-breakpoint-down(sm) {
+      gap: 30px;
+    }
+
     display: flex;
     gap: 49px;
     justify-content: center;
@@ -23,6 +28,11 @@
     transform: translate(-50%, -50%);
 
     span {
+      @include media-breakpoint-down(sm) {
+        width: 20px;
+        height: 20px;
+      }
+
       background-color: $white;
       width: 27px;
       height: 27px;

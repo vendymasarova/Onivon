@@ -9,17 +9,11 @@
   min-width: 100%;
 
   &__col {
-    @include media-breakpoint-down(xxl) {
+    @include media-breakpoint-down(xl) {
       justify-content: space-between;
       text-align: left;
       border-right: 0;
       margin-bottom: 40px;
-
-      &--end {
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-      }
     }
     @include media-breakpoint-down(md) {
       flex-direction: column;
@@ -37,6 +31,11 @@
     }
 
     &--end {
+      @include media-breakpoint-down(xl) {
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+      }
       justify-content: flex-end;
       text-align: right;
       align-items: center;

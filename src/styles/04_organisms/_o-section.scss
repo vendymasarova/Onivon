@@ -9,6 +9,16 @@
       font-size: 3rem;
     }
   }
+  @include media-breakpoint-down(md) {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
   &--light {
     background-color: $gray-200;
@@ -17,6 +27,19 @@
 
   &__title {
     margin-bottom: 5rem;
+  }
+
+  &__name {
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+
+    font-size: 15px;
+    color: $primary;
+    line-height: 32px;
+    margin-bottom: 26px;
+    font-weight: $font-weight-bold;
+    padding-left: 40px;
   }
 
   padding: 9.375rem 0;

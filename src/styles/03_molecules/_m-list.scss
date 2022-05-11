@@ -1,0 +1,24 @@
+.m-list {
+  padding: 50px 0;
+  border-top: 1px solid $gray-200;
+  color: $gray-800;
+
+  &__title {
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2rem;
+    }
+
+    color: $gray-800;
+    font-weight: $font-weight-bold;
+    padding-left: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 50px;
+  }
+}
