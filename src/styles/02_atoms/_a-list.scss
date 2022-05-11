@@ -1,11 +1,10 @@
 .a-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 
   li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    line-height: 35px;
   }
 
    a {
@@ -15,5 +14,18 @@
     &:hover {
       color: $gray-800;
     }
+  }
+
+  &--row {
+    display: flex;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    display: inline-block
   }
 }
