@@ -1,0 +1,13 @@
+.m-form {
+  margin-top: 5rem;
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+  }
+
+  &__col {
+    padding: 0 20px;
+  }
+}

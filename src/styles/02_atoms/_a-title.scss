@@ -16,4 +16,12 @@
       color: $black;
     }
   }
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--xs {
+    font-size: 15px;
+  }
 }

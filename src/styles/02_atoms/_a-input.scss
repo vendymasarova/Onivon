@@ -1,0 +1,20 @@
+.a-input {
+  display: flex;
+  min-width: 100%;
+  padding: 1.8125rem;
+  border: none;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &--textarea {
+    resize: none;
+  }
+}
+
+.form-control {
+  border-radius: none !important;
+
+}

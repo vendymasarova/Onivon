@@ -15,7 +15,7 @@
 @import "bootstrap/scss/containers.scss";
 @import "bootstrap/scss/grid.scss";
 // @import "bootstrap/scss/tables.scss";
-// @import "bootstrap/scss/forms.scss";
+@import "bootstrap/scss/forms.scss";
 // @import "bootstrap/scss/buttons.scss";
 // @import "bootstrap/scss/transitions.scss";
 @import "bootstrap/scss/dropdown.scss";
@@ -64,6 +64,9 @@
 @import "./02_atoms/_a-container";
 @import "./02_atoms/_a-list";
 @import "./02_atoms/_a-adress";
+@import "./02_atoms/_a-input";
+@import "./02_atoms/_a-label";
+@import "./02_atoms/_a-points";
 
 // Molecules
 @import "./03_molecules/_m-primary-nav";
@@ -71,6 +74,7 @@
 @import "./03_molecules/_m-product-box";
 @import "./03_molecules/_m-box";
 @import "./03_molecules/_m-list";
+@import "./03_molecules/_m-form";
 
 // Organisms
 @import "./04_organisms/_o-hello";

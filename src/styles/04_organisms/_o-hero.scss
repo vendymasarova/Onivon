@@ -1,7 +1,7 @@
 .o-hero {
   $root: &;
 
-  padding: 12.5rem 0;
+  padding: 200px 0;
   background-color: $blue;
   color: $white;
   position: relative;
@@ -17,13 +17,24 @@
     }
   }
 
+  &--full {
+    #{$root}__figure {
+      right: 0;
+      max-width: 100%;
+
+      &::before {
+        background-image: none;
+      }
+    }
+  }
+
   &__title {
     @include media-breakpoint-down(lg) {
       font-size: 4rem;
     }
 
     @include media-breakpoint-down(md) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     font-size: 5rem;
