@@ -1,8 +1,10 @@
 .a-title {
   // font-family: $font-family-secondary;
   // font-weight: $font-weight-normal !important;
-  font-size: 1.5625rem
-  ;
+  font-size: 1.5625rem;
+  line-height: 35px;
+
+
   > span {
     display: block;
     font-weight: $font-weight-bold !important;
@@ -19,6 +21,11 @@
 
   &--bold {
     font-weight: $font-weight-bold;
+  }
+
+  &--sm {
+    font-size: 1.5625rem;
+    max-width: 450px;
   }
 
   &--xs {

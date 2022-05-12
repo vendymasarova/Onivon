@@ -1,0 +1,13 @@
+.a-divider {
+  background: $white;
+
+  &--light{
+    background-color: $gray-200;
+  }
+
+  &__line {
+    height: 1px;
+    width: 100%;
+    background-color: $gray-600;
+  }
+}

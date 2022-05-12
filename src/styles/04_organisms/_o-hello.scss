@@ -33,9 +33,12 @@
     }
     @include media-breakpoint-up(xl) {
       font-size: 10rem;
+      line-height: 155px;
+
     }
 
     font-size: 4rem;
+    line-height: 80px;
 
     > span {
 

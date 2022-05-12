@@ -1,0 +1,10 @@
+.m-white-box {
+  padding: 100px 130px;
+  background-color: $white;
+
+  &__btn{
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}

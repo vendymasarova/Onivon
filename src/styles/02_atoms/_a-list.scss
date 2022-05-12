@@ -3,6 +3,12 @@
   padding-left: 0;
   margin-top: 1.75rem;
 
+
+  &__title {
+    width: 100%;
+    display: inline-block
+  }
+
   li {
     line-height: 35px;
   }
@@ -31,8 +37,46 @@
     }
   }
 
-  &__title {
-    width: 100%;
-    display: inline-block
+  &--dash {
+    color: $gray-800;
+
+    li {
+      padding-bottom: 1.25rem ;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 1px;
+        top: 25%;
+        background: $gray-800;
+      }
+
+      span {
+        padding-left: 3.5rem;
+      }
+    }
   }
+
+  &--check {
+    color: $white;
+
+    li {
+      padding-bottom: 1.25rem ;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: url(../img/check.svg);
+        left: -30px;
+        top: 25%;
+      }
+
+      span {
+        padding-left: 2.5rem;
+      }
+    }
+  }
+
 }
