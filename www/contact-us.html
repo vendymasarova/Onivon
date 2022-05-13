@@ -299,27 +299,39 @@
                 <div class="a-perex">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue.</p>
                 </div>
-                <form action="" class="m-form">
+                <form class="m-form needs-validation" method="post" novalidate>
                     <div class="row">
                         <div class="col-md-6 m-form__col">
-                            <label for="name" class="a-label form-label">Jméno*</label>
-                            <input id="name" name="name" type="text" class="a-input" id="validationCustom01" required>
+                            <label for="name validationUsername" class="a-label form-label">Jméno*</label>
+                            <input id="name validationUsername" name="name" type="text" class="a-input" required>
+                            <div id="empty-input" class="invalid-feedback">
+                                Please fill out this field.
+                            </div>
                         </div>
                         <div class="col-md-6 m-form__col">
-                            <label for="surname" class="a-label form-label">Příjmení*</label>
-                            <input id="surname" name="surname" type="text" class="a-input" required>
+                            <label for="surname validationSurname" class="a-label form-label">Příjmení*</label>
+                            <input id="surname validationSurname" name="surname" type="text" class="a-input" required>
+                            <div id="empty-input" class="invalid-feedback">
+                                Please fill out this field.
+                            </div>
                         </div>
                         <div class="col-md-6 m-form__col">
-                            <label for="email" class="a-label form-label">E-mail*</label>
-                            <input id="email" name="email" type="text" class="a-input" required>
+                            <label for="email validationEmail" class="a-label form-label">E-mail*</label>
+                            <input id="email validationEmail" name="email" type="email" class="a-input" required>
+                            <div id="empty-input" class="invalid-feedback">
+                                Please fill out this field.
+                            </div>
                         </div>
                         <div class="col-md-6 m-form__col">
                             <label for="tel" class="a-label form-label">Telefon</label>
                             <input id="tel" name="tel" type="text" class="a-input">
                         </div>
                         <div class="col-12 m-form__col">
-                            <label for="" class="a-label form-label">Vaše zpráva*</label>
-                            <textarea name="" id="" cols="30" rows="10" class="a-input a-input--textarea" required></textarea>
+                            <label for="message validationMessage" class="a-label form-label">Vaše zpráva*</label>
+                            <textarea name="" id="message validationMessage" cols="30" rows="10" class="a-input a-input--textarea" required></textarea>
+                            <div id="empty-input" class="invalid-feedback">
+                                Please fill out this field.
+                            </div>
                         </div>
                     </div>
                     <div class="m-form__actions">
@@ -412,5 +424,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/bundle.esm.js" type="module"></script>
     </body>
     </html>

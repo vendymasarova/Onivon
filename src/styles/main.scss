@@ -22,6 +22,8 @@
 // @import "bootstrap/scss/button-group.scss";
 @import "bootstrap/scss/nav.scss";
 @import "bootstrap/scss/navbar.scss";
+@import "bootstrap/scss/forms/validation.scss";
+
 // @import "bootstrap/scss/card.scss";
 // @import "bootstrap/scss/accordion.scss";
 // @import "bootstrap/scss/breadcrumb.scss";
@@ -68,6 +70,8 @@
 @import "./02_atoms/_a-label";
 @import "./02_atoms/_a-points";
 @import "./02_atoms/_a-divider";
+@import "./02_atoms/_a-table";
+@import "./02_atoms/_a-figure";
 
 // Molecules
 @import "./03_molecules/_m-primary-nav";

@@ -30,11 +30,10 @@
   &__title {
     @include media-breakpoint-up(lg) {
       font-size: 8rem;
+      line-height: 155px;
     }
     @include media-breakpoint-up(xl) {
       font-size: 10rem;
-      line-height: 155px;
-
     }
 
     font-size: 4rem;

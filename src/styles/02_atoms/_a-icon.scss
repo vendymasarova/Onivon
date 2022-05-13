@@ -1,4 +1,8 @@
 .a-icon {
+  @include media-breakpoint-down(md) {
+    max-width: 120px;
+  }
+
   max-width: 160px;
   height: auto;
 }

@@ -7062,6 +7062,22 @@ var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-tog
 dropdownElementList.map(function (dropdownToggleEl) {
   return new Dropdown(dropdownToggleEl);
 });
+
+(function () {
+  var forms = document.querySelectorAll('.needs-validation');
+  console.log(forms);
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+
 mainNav();
 console.log('hello');
 //# sourceMappingURL=bundle.esm.js.map

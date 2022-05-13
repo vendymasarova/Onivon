@@ -37,8 +37,9 @@
     }
 
     @include media-breakpoint-down(md) {
-      font-size: 3rem;
-      line-height: 60px;
+      font-size: 2rem;
+      line-height: 50px;
+      margin-bottom: 30px;
     }
 
     font-size: 5rem;

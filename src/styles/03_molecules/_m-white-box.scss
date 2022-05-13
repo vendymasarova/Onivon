@@ -1,10 +1,19 @@
 .m-white-box {
-  padding: 100px 130px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  padding: 6.25rem 8.125rem;
   background-color: $white;
 
   &__btn{
     display: flex;
     padding-top: 28px;
     padding-bottom: 28px;
+    border: 1px solid $gray-200;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    text-transform: unset;
+    font-weight: $font-weight-normal;
   }
 }
