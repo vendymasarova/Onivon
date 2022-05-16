@@ -21,6 +21,7 @@
   }
 
   &--full {
+
     #{$root}__figure {
       right: 0;
       max-width: 100%;
@@ -35,7 +36,6 @@
     @include media-breakpoint-down(lg) {
       font-size: 4rem;
     }
-
     @include media-breakpoint-down(md) {
       font-size: 2rem;
       line-height: 50px;

@@ -28,10 +28,12 @@
     &--sm {
       @include media-breakpoint-down(md) {
         font-size: 2rem;
+        list-style: 2.5rem;
       }
 
       font-size: 2.8125rem;
       margin-bottom: 2.5rem;
+      line-height: 3.4375rem;
     }
   }
 
@@ -53,6 +55,7 @@
       flex-direction: column;
       align-items: center;
     }
+
     display: flex;
     justify-content: center;
     gap: 20px;

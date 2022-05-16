@@ -6,6 +6,12 @@
   padding: 6.25rem 8.125rem;
   background-color: $white;
 
+  &--sm {
+    padding: 2.6875rem;
+    border-radius: 15px;
+    height: 100%;
+  }
+
   &__btn{
     display: flex;
     padding-top: 28px;
