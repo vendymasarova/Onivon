@@ -9,36 +9,16 @@
   min-height: 568px;
   position: relative;
 
-  &--dotted {
-    padding-top: 2.25rem;
+  &--dark {
     background-color: $gray-800;
   }
 
-  &__dots {
-    @include media-breakpoint-down(sm) {
-      gap: 30px;
-    }
-
-    display: flex;
-    gap: 49px;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    span {
-      @include media-breakpoint-down(sm) {
-        width: 20px;
-        height: 20px;
-      }
-
-      background-color: $white;
-      width: 27px;
-      height: 27px;
-      display: block;
-      border-radius: 50%;
-    }
+  &--dotted {
+    padding-top: 2.25rem;
+    background-image: url(../img/dots.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__header {

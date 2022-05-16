@@ -29,6 +29,13 @@
     font-size: 15px;
   }
 
+  &--footer {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+
   &--primary {
 
     > span {

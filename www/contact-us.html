@@ -65,39 +65,26 @@
             </div>
         </header>
 
-        <section class="o-hero o-hero--dark o-hero--full">
+        <section class="o-hero o-hero--full">
             <div class="container container--xl">
                 <div class="o-hero__body">
                     <div class="row">
                         <div class="col-12">
                             <h1 class="a-title  o-hero__title">Kontaktujte<span>nás</span></h1>
-                            <div class="a-points a-points--first">
-                                <img src="./img/icon-point.svg" alt="">
-                                <h2 class="a-title a-title--bold a-title--xs">Hradec Králové</h2>
-                            </div>
-                            <div class="a-points a-points--second">
-                                <h2 class="a-title a-title--bold a-title--xs">Chrudim</h2>
-                                <img src="./img/icon-point.svg" alt="">
-                            </div>
-                            <div class="a-points a-points--third">
-                                <h2 class="a-title a-title--bold a-title--xs">Němčice n. Hanou</h2>
-                                <img src="./img/icon-point.svg" alt="">
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="o-hero__gradient">
-                <div class="o-hero__figure">
-                    <img src="./img/map.jpg" srcset="./img/map@2x.jpg 2x" alt="hero-img">
-                </div>
-            </div>
+            <picture class="o-hero__figure">
+                <source media="(min-width:600px)" src="./img/map.jpg" srcset="./img/map@2x.jpg 2x">
+                <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Flowers">
+            </picture>
         </section>
 
         <section class="o-section">
             <div class="a-container">
                 <div class="row mt-5">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 o-section--offset">
                         <div class="m-box">
                             <div class="m-box__header">
                                 <h3 class="m-box__name">Sídlo společnosti</h3>
@@ -141,7 +128,7 @@
                             </div>
                         </div>
 
-                        <div class="m-box m-box--dotted mt-5">
+                        <div class="m-box m-box--dark m-box--dotted mt-5">
                             <div class="m-box__dots">
                                 <span></span>
                                 <span></span>
@@ -155,15 +142,9 @@
                             </div>
                             <div class="m-box__body">
                                 <h4 class="m-box__title">ONIVON a. s.</h4>
-                                <address>
-                                    <ul class="a-list">
-                                        <li>
-                                            Akademika Bedrny 88/6
-                                        </li>
-                                        <li>
-                                            500 03 Hradec Králové
-                                        </li>
-                                    </ul>
+                                <address class="a-adress">
+                                    Akademika Bedrny 88/6 <br>
+                                    500 03 Hradec Králové
                                 </address>
                                 <ul class="a-list">
                                     <li>
@@ -192,12 +173,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">chrudim</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Průmyslová 90</li>
-                                        <li>Chrudim IV</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                    ONIVON a. s <br>
+                                    Akademika Bedrny 88/6 <br>
+                                    500 03 Hradec Králové
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -211,7 +190,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 14:30</li>
                                     <li>
@@ -225,12 +204,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">Hradec Králové</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Akademika Bedrny 88/6</li>
-                                        <li>Hradec Králové</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                        Akademika Bedrny 88/6 <br>
+                                        Hradec Králové <br>
+                                        798 27
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -244,7 +221,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 15:30</li>
                                     <li>
@@ -258,12 +235,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">Němčice nad Hanou</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Masarykova 640</li>
-                                        <li>Němčice nad Hanou</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                        Masarykova 640 <br>
+                                        Němčice nad Hanou <br>
+                                        798 27
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -277,7 +252,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 15:30</li>
                                     <li>
@@ -303,32 +278,32 @@
                     <div class="row">
                         <div class="col-md-6 m-form__col">
                             <label for="name validationUsername" class="a-label form-label">Jméno*</label>
-                            <input id="name validationUsername" name="name" type="text" class="a-input" required>
+                            <input id="name validationUsername" name="name" type="text" class="a-input form-control" required>
                             <div id="empty-input" class="invalid-feedback">
                                 Please fill out this field.
                             </div>
                         </div>
                         <div class="col-md-6 m-form__col">
                             <label for="surname validationSurname" class="a-label form-label">Příjmení*</label>
-                            <input id="surname validationSurname" name="surname" type="text" class="a-input" required>
+                            <input id="surname validationSurname" name="surname" type="text" class="a-input form-control" required>
                             <div id="empty-input" class="invalid-feedback">
                                 Please fill out this field.
                             </div>
                         </div>
                         <div class="col-md-6 m-form__col">
                             <label for="email validationEmail" class="a-label form-label">E-mail*</label>
-                            <input id="email validationEmail" name="email" type="email" class="a-input" required>
+                            <input id="email validationEmail" name="email" type="email" class="a-input form-control" required>
                             <div id="empty-input" class="invalid-feedback">
                                 Please fill out this field.
                             </div>
                         </div>
                         <div class="col-md-6 m-form__col">
                             <label for="tel" class="a-label form-label">Telefon</label>
-                            <input id="tel" name="tel" type="text" class="a-input">
+                            <input id="tel" name="tel" type="text" class="a-input form-control">
                         </div>
                         <div class="col-12 m-form__col">
                             <label for="message validationMessage" class="a-label form-label">Vaše zpráva*</label>
-                            <textarea name="" id="message validationMessage" cols="30" rows="10" class="a-input a-input--textarea" required></textarea>
+                            <textarea name="" id="message validationMessage" cols="30" rows="10" class="a-input form-control a-input--textarea" required></textarea>
                             <div id="empty-input" class="invalid-feedback">
                                 Please fill out this field.
                             </div>
@@ -352,8 +327,8 @@
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="o-footer__col o-footer__col--nav">
-                            <span class="d-block mt-4"><strong>Sitemap</strong></span>
-                            <ul class="a-list a-list--row o-footer__list">
+                            <h5 class="a-title a-title--footer mb-3">Sitemap</h5>
+                            <ul class="a-list a-list--row a-list--white">
                                 <li class="d-block">
                                     <a href="#">Our services</a>
                                 </li>
@@ -361,7 +336,7 @@
                                     <a href="#">About us</a>
                                 </li>
                             </ul>
-                            <ul class="a-list a-list--row o-footer__list">
+                            <ul class="a-list a-list--row a-list--white">
                                 <li>
                                     <a href="#">Career</a>
                                 </li>
@@ -373,45 +348,44 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="o-footer__col">
-                            <address>
-                                <ul class="a-list o-footer__list">
-                                    <li class="mb-3"><strong>Adress</strong></li>
-                                    <li>ONIVON a. s</li>
-                                    <li>Akademika Bedrny 88/6</li>
-                                    <li>500 03 Hradec Králové</li>
+                            <div class="d-flex flex-column mt-3">
+                                <h5 class="a-title a-title--footer mb-3">Adress</h5>
+                                <address class="a-adress">
+                                    ONIVON a. s <br>
+                                    Akademika Bedrny 88/6 <br>
+                                    500 03 Hradec Králové
+                                </address>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <h5 class="a-title a-title--footer mb-3">Contact</h5>
+                                <ul class="a-list a-list--white a-list--col">
+                                    <li>
+                                        <a href="tel:+420495404311">
+                                            Tel.: +420 495 404 311
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+420495404312">
+                                            Tel.: +420 495 404 312
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:info@onivon.cz">
+                                            info@onivon.cz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:sale@onivon.cz">
+                                            sale@onivon.cz
+                                        </a>
+                                    </li>
                                 </ul>
-                            </address>
-                            <ul class="a-list o-footer__list">
-                                <li class="mb-3"><strong>Contact</strong></li>
-                                <li>
-                                    <a href="tel:+420495404311">
-                                        Tel.: +420 495 404 311
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+420495404312">
-                                        Tel.: +420 495 404 312
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="a-list o-footer__list">
-                                <li class="mt-5"><strong></strong></li>
-                                <li>
-                                    <a href="mailto:info@onivon.cz">
-                                        info@onivon.cz
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:sale@onivon.cz">
-                                        sale@onivon.cz
-                                    </a>
-                                </li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3">
                         <div class="o-footer__col o-footer__col--end">
-                            <ul class="a-list o-footer__list">
+                            <ul class="a-list a-list--white o-footer__list">
                                 <li class="mb-3">
                                     Made by <a href="#">WDF</a>
                                 </li>
@@ -424,6 +398,7 @@
                 </div>
             </div>
         </footer>
+
         <script src="js/bundle.esm.js" type="module"></script>
     </body>
     </html>

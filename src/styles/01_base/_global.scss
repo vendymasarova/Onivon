@@ -1,21 +1,3 @@
-// .container {
-//     @include make-container();
-//     max-width: map-get($grid-breakpoints, "xxl");
-
-//     &--sm {
-//       max-width: map-get($grid-breakpoints, "sm") !important;
-//     }
-//     &--md {
-//       max-width: map-get($grid-breakpoints, "md") !important;
-//     }
-//     &--lg {
-//       max-width: map-get($grid-breakpoints, "lg") !important;
-//     }
-//     &--xl {
-//       max-width: map-get($grid-breakpoints, "xl") !important;
-//     }
-//   }
-
 @font-face {
   font-family: 'Syncopate';
   src: url('../fonts/Syncopate-Bold.woff2') format('woff2'),
@@ -31,5 +13,23 @@
       url('../fonts/Syncopate-Regular.woff') format('woff');
   font-weight: $font-weight-normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: $font-weight-normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: bold;
   font-display: swap;
 }

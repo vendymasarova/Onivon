@@ -45,11 +45,14 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     a {
 
       &:hover {
-        color: $primary;
+        color: $white;
       }
     }
   }

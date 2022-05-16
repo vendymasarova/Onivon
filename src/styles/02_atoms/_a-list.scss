@@ -15,9 +15,21 @@
   a {
     text-decoration: none;
     transition: all 0.3s ease;
+    color: $white;
 
     &:hover {
       color: $gray-800;
+    }
+  }
+
+  &--white {
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 
@@ -75,6 +87,12 @@
       span {
         padding-left: 2.5rem;
       }
+    }
+  }
+
+  &--col {
+    @include media-breakpoint-up(xl) {
+      column-count: 2;
     }
   }
 }

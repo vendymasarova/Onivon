@@ -231,67 +231,35 @@
             </div>
         </section>
 
-        <section class="o-hero">
+        <section class="o-hero  o-hero--offset">
             <div class="container container--xl">
                 <div class="o-hero__body">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="a-title o-hero__title">O naší <span>společnosti</span></h1>
-                        </div>
-                        <div class="col-xl-10 d-flex justify-content-end">
-                            <div class="a-perex a-perex--md">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce dui leo, imperdiet in.</p>
-                            </div>
+                            <h1 class="a-title  o-hero__title">Kontaktujte<span>nás</span></h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="o-hero__figure">
-                <img src="./img/hero-img-002.jpg" srcset="./img/hero-img-002@2x.jpg 2x" alt="hero-img">
-            </div>
-        </section>
-
-        <section class="o-hero o-hero--dark">
-            <div class="container container--xl">
-                <div class="o-hero__body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1 class="a-title o-hero__title">Přidejte se <span>k nám</span></h1>
-                            <img class="d-block a-icon" src="./img/icon-join.png" srcset="./img/icon-join@2x.png" alt="">
-                        </div>
-                        <div class="col-md-6 d-flex align-items-center">
-                            <div class="a-perex a-perex--md">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce dui leo, imperdiet in.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="o-hero__figure">
-                <img src="./img/hero-img-003.png" srcset="./img/hero-img-003@2x.png 2x" alt="hero-img">
-            </div>
+            <picture class="o-hero__figure">
+                <source media="(min-width:600px)" src="./img/map.jpg" srcset="./img/map@2x.jpg 2x">
+                <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Flowers">
+            </picture>
         </section>
 
         <section class="o-section">
             <div class="a-container">
-                <h2 class="a-title o-section__title">Kontakty</h2>
                 <div class="row mt-5">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 o-section--offset">
                         <div class="m-box">
                             <div class="m-box__header">
                                 <h3 class="m-box__name">Sídlo společnosti</h3>
                             </div>
                             <div class="m-box__body">
                                 <h4 class="m-box__title">ONIVON a. s.</h4>
-                                <address>
-                                    <ul class="a-list">
-                                        <li>
-                                            Akademika Bedrny 88/6
-                                        </li>
-                                        <li>
-                                            500 03 Hradec Králové
-                                        </li>
-                                    </ul>
+                                <address class="a-adress">
+                                    Akademika Bedrny 88/6 <br>
+                                    500 03 Hradec Králové
                                 </address>
                                 <ul class="a-list">
                                     <li>
@@ -325,12 +293,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">chrudim</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Průmyslová 90</li>
-                                        <li>Chrudim IV</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                        Průmyslová 90 <br>
+                                        Chrudim IV <br>
+                                        798 27 <br>
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -344,7 +310,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 14:30</li>
                                     <li>
@@ -358,12 +324,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">Hradec Králové</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Akademika Bedrny 88/6</li>
-                                        <li>Hradec Králové</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                    Akademika Bedrny 88/6 <br>
+                                    Hradec Králové <br>
+                                    798 27 <br>
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -377,7 +341,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 15:30</li>
                                     <li>
@@ -391,12 +355,10 @@
                         <div class="m-list">
                             <h3 class="a-title m-list__title">Němčice nad Hanou</h3>
                             <div class="m-list__body">
-                                <address>
-                                    <ul class="a-list">
-                                        <li>Masarykova 640</li>
-                                        <li>Němčice nad Hanou</li>
-                                        <li>798 27</li>
-                                    </ul>
+                                <address class="a-adress">
+                                    Masarykova 640 <br>
+                                    Němčice nad Hanou <br>
+                                    798 27 <br>
                                 </address>
                                 <ul class="a-list a-list--dark">
                                     <li>
@@ -410,7 +372,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="a-list">
+                                <ul class="a-list a-list--dark">
                                     <li><strong>Warehouse open time:</strong></li>
                                     <li>Mo – Fri   6:00 – 15:30</li>
                                     <li>
@@ -426,29 +388,15 @@
             </div>
         </section>
 
-        <div class="m-box m-box--dotted mt-5">
-            <div class="m-box__dots">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="m-box m-box--dark m-box--dotted mt-5">
             <div class="m-box__header">
                 <h3 class="m-box__name">Fakturační údaje</h3>
             </div>
             <div class="m-box__body">
                 <h4 class="m-box__title">ONIVON a. s.</h4>
-                <address>
-                    <ul class="a-list">
-                        <li>
-                            Akademika Bedrny 88/6
-                        </li>
-                        <li>
-                            500 03 Hradec Králové
-                        </li>
-                    </ul>
+                <address class="a-adress">
+                    Akademika Bedrny 88/6 <br>
+                    500 03 Hradec Králové
                 </address>
                 <ul class="a-list">
                     <li>
@@ -472,35 +420,13 @@
             </div>
         </div>
 
-        <section class="o-section">
-            <div class="a-container">
-                <ul class="a-list a-list--dash">
-                    <li><span> výroba vstřikovacích forem na termoplasty, včetně forem na lisy babyplast</span></li>
-                    <li><span> výroba kokil na lití hliníkových slitin a zinku</span></li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span> výroba velmi přesných a tvarově složitých dílců (vložky forem, razníky, střižné matrice, protlačovací matrice, součásti automatických linek, díly přípravků)</span></li>
-                </ul>
-
-                <ul class="a-list a-list--check">
-                    <li><span>výroba vstřikovacích forem na termoplasty, včetně forem na lisy babyplast</span></li>
-                    <li><span> výroba kokil na lití hliníkových slitin a zinku</span></li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span>výroba tažných, střižných, ohýbacích a postupových nástrojů</span> </li>
-                    <li><span> výroba velmi přesných a tvarově složitých dílců (vložky forem, razníky, střižné matrice, protlačovací matrice, součásti automatických linek, díly přípravků)</span></li>
-                </ul>
-            </div>
-        </section>
-
         <footer class="o-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="o-footer__col o-footer__col--nav">
-                            <span class="d-block mt-4"><strong>Sitemap</strong></span>
-                            <ul class="a-list a-list--row o-footer__list">
+                            <h5 class="a-title a-title--footer mb-3">Sitemap</h5>
+                            <ul class="a-list a-list--row a-list--white">
                                 <li class="d-block">
                                     <a href="#">Our services</a>
                                 </li>
@@ -508,7 +434,7 @@
                                     <a href="#">About us</a>
                                 </li>
                             </ul>
-                            <ul class="a-list a-list--row o-footer__list">
+                            <ul class="a-list a-list--row a-list--white">
                                 <li>
                                     <a href="#">Career</a>
                                 </li>
@@ -520,45 +446,44 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="o-footer__col">
-                            <address>
-                                <ul class="a-list o-footer__list">
-                                    <li class="mb-3"><strong>Adress</strong></li>
-                                    <li>ONIVON a. s</li>
-                                    <li>Akademika Bedrny 88/6</li>
-                                    <li>500 03 Hradec Králové</li>
+                            <div class="d-flex flex-column mt-3">
+                                <h5 class="a-title a-title--footer mb-3">Adress</h5>
+                                <address class="a-adress">
+                                    ONIVON a. s <br>
+                                    Akademika Bedrny 88/6 <br>
+                                    500 03 Hradec Králové
+                                </address>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <h5 class="a-title a-title--footer mb-3">Contact</h5>
+                                <ul class="a-list o-footer__list a-list--white a-list--col">
+                                    <li>
+                                        <a href="tel:+420495404311">
+                                            Tel.: +420 495 404 311
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+420495404312">
+                                            Tel.: +420 495 404 312
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:info@onivon.cz">
+                                            info@onivon.cz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:sale@onivon.cz">
+                                            sale@onivon.cz
+                                        </a>
+                                    </li>
                                 </ul>
-                            </address>
-                            <ul class="a-list o-footer__list">
-                                <li class="mb-3"><strong>Contact</strong></li>
-                                <li>
-                                    <a href="tel:+420495404311">
-                                        Tel.: +420 495 404 311
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+420495404312">
-                                        Tel.: +420 495 404 312
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="a-list o-footer__list">
-                                <li class="mt-5"><strong></strong></li>
-                                <li>
-                                    <a href="mailto:info@onivon.cz">
-                                        info@onivon.cz
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:sale@onivon.cz">
-                                        sale@onivon.cz
-                                    </a>
-                                </li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3">
                         <div class="o-footer__col o-footer__col--end">
-                            <ul class="a-list o-footer__list">
+                            <ul class="a-list a-list--white o-footer__list">
                                 <li class="mb-3">
                                     Made by <a href="#">WDF</a>
                                 </li>
