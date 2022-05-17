@@ -11,9 +11,9 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/bundle.css">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
         <meta name="theme-color" content="#fafafa">
     </head>
@@ -66,7 +66,7 @@
         </header>
 
         <section class="o-hero o-hero--full">
-            <div class="container container--xl">
+            <div class="a-container a-container">
                 <div class="o-hero__body">
                     <div class="row">
                         <div class="col-12">
@@ -76,8 +76,11 @@
                 </div>
             </div>
             <picture class="o-hero__figure">
-                <source media="(min-width:600px)" src="./img/map.jpg" srcset="./img/map@2x.jpg 2x">
-                <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Flowers">
+                <picture class="o-hero__figure">
+                    <source media="(min-width:1400px)" src="./img/map.jpg" srcset="./img/map@2x.jpg 2x">
+                    <source media="(min-width:400px)" src="./img/map-tablet.jpg" srcset="./img/map-tablet@2x.jpg 2x">
+                    <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="map-mobile photo                   ">
+                </picture>
             </picture>
         </section>
 

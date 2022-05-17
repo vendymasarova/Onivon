@@ -1,8 +1,13 @@
 .a-icon {
-  @include media-breakpoint-down(md) {
+
+  img {
+    @include media-breakpoint-up(md) {
+      max-width: 160px;
+    }
+
     max-width: 120px;
+    height: auto;
   }
 
-  max-width: 160px;
-  height: auto;
+  margin-bottom: 1.5rem
 }

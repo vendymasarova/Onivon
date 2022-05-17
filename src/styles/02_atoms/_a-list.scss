@@ -52,7 +52,7 @@
     color: $gray-800;
 
     li {
-      padding-bottom: 1.25rem ;
+      margin-bottom: 1.25rem ;
       position: relative;
 
       &::before {
@@ -66,26 +66,26 @@
 
       span {
         padding-left: 3.5rem;
+        display: block;
       }
     }
   }
 
   &--check {
-    color: $white;
 
     li {
-      padding-bottom: 1.25rem ;
+      margin-bottom: 1.25rem ;
       position: relative;
 
       &::before {
         position: absolute;
         content: url(../img/check.svg);
-        left: -30px;
         top: 25%;
       }
 
       span {
-        padding-left: 2.5rem;
+        padding-left: 3.5rem;
+        display: block;
       }
     }
   }

@@ -22,6 +22,11 @@
   background-image: none !important;
 }
 
+.was-validated  .form-label.form-control:invalid
+ {
+  color: $primary;
+}
+
 .was-validated .form-control:valid, .form-control.is-valid {
   background-image: none !important;
 }

@@ -12,16 +12,18 @@ $section-padding-horizontal: 9.375rem;
   &--offset {
     @include media-breakpoint-up(xl) {
       margin-top: calc(-#{$section-padding-horizontal} - 244px);
-      z-index: 2
+      z-index: 2;
+
+      &-left {
+        position: relative;
+        left: 50px;
+      }
     }
     @include media-breakpoint-down(lg) {
       margin-top: calc(-#{$section-padding-horizontal});
-    }
-  }
 
-  &--xs {
-    padding: 4.0625rem 0;
-    margin: auto;
+
+    }
   }
 
   &__title {
@@ -92,26 +94,5 @@ $section-padding-horizontal: 9.375rem;
       -o-object-fit: cover;
       object-fit: cover;
     }
-
-    // &::before {
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   left: 0;
-    //   content: "";
-    //   background-image: linear-gradient(270deg, $blue 0%, rgba($blue, 0) 100%);
-    // }
-
-    // &::after {
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   left: 0;
-    //   content: "";
-    //   background-color: $blue;
-    //   opacity: 0.2;
-    // }
   }
 }

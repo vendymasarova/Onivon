@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1027px" height="543px" viewBox="0 0 1027 543" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>timeline¨</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="O-nas" transform="translate(-286.000000, -1282.000000)">
+            <g id="01" transform="translate(286.000000, 872.000000)">
+                <g id="timeline¨" transform="translate(0.000000, 410.000000)">
+                    <line x1="0" y1="254.5" x2="926.5" y2="254.5" id="Path-3" stroke="#2C2C2C" stroke-width="3"></line>
+                    <line x1="925.5" y1="254.5" x2="1027" y2="254.5" id="Path-3-Copy" stroke="#2C2C2C" stroke-width="3" opacity="0.200000003" stroke-dasharray="6"></line>
+                    <polygon id="Path-4" fill="#2C2C2C" fill-rule="nonzero" points="3 243 3 266.007812 0 266.007812 0 243"></polygon>
+                    <polygon id="Path-4" fill="#2C2C2C" fill-rule="nonzero" points="927 243 927 266.007812 924 266.007812 924 243"></polygon>
+                    <polygon id="Path-4" fill="#2C2C2C" fill-rule="nonzero" points="373 243 373 266.007812 370 266.007812 370 243"></polygon>
+                    <polygon id="Path-4" fill="#2C2C2C" fill-rule="nonzero" points="557 243 557 266.007812 554 266.007812 554 243"></polygon>
+                    <polygon id="Path-4-Copy" fill="#2C2C2C" fill-rule="nonzero" points="742 243 742 266.007812 739 266.007812 739 243"></polygon>
+                    <polygon id="Path-4" fill="#2C2C2C" fill-rule="nonzero" points="188 243 188 266.007812 185 266.007812 185 243"></polygon>
+                    <g id="Group-2">
+                        <polygon id="Rectangle" fill="#A52143" points="0 1.39263601e-13 186 9.90318938e-14 186 203 15.0546875 203 0 223"></polygon>
+                        <text id="Lisovna-kovů-Nástroj" font-family="OpenSans-Regular, Open Sans" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="37" y="103">Lisovna kovů</tspan>
+                            <tspan x="37" y="125"></tspan>
+                            <tspan x="37" y="147">Nástrojárna</tspan>
+                        </text>
+                        <text id="1991" font-family="Syncopate-Bold, Syncopate" font-size="25" font-weight="bold" line-spacing="40" letter-spacing="-1" fill="#FFFFFF">
+                            <tspan x="37" y="52">1991</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2-Copy" transform="translate(370.000000, 37.000000)">
+                        <polygon id="Rectangle" fill="#A52143" points="0 2.96845881e-14 186 0 186 166 15.0546875 166 0 186"></polygon>
+                        <g id="Group-3" transform="translate(37.000000, 40.000000)" fill="#FFFFFF">
+                            <text id="Lisovna-plastů" font-family="OpenSans-Regular, Open Sans" font-size="16" font-weight="normal">
+                                <tspan x="0" y="70">Lisovna plastů</tspan>
+                            </text>
+                            <text id="2005" font-family="Syncopate-Bold, Syncopate" font-size="25" font-weight="bold" line-spacing="40" letter-spacing="-1">
+                                <tspan x="0" y="19">2005</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-2-Copy-2" transform="translate(739.000000, 37.000000)">
+                        <polygon id="Rectangle" fill="#A52143" points="0 2.96845881e-14 186 0 186 166 15.0546875 166 0 186"></polygon>
+                        <g id="Group-3" transform="translate(37.000000, 40.000000)" fill="#FFFFFF">
+                            <text id="Medical-Devices" font-family="OpenSans-Regular, Open Sans" font-size="16" font-weight="normal">
+                                <tspan x="0" y="70">Medical Devices</tspan>
+                            </text>
+                            <text id="2013" font-family="Syncopate-Bold, Syncopate" font-size="25" font-weight="bold" line-spacing="40" letter-spacing="-1">
+                                <tspan x="0" y="19">2013</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-6" transform="translate(185.000000, 286.000000)">
+                        <polygon id="Rectangle" fill="#A52143" transform="translate(134.500000, 128.500000) scale(1, -1) translate(-134.500000, -128.500000) " points="0 6.95485336e-14 269 6.95485336e-14 269 237 15.0546875 237 0 257"></polygon>
+                        <text id="Společnost-ONIVON-a." font-family="OpenSans-Regular, Open Sans" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="45" y="119.992188">Společnost ONIVON a.s., </tspan>
+                            <tspan x="45" y="141.992188">byla založena v roce </tspan>
+                            <tspan x="45" y="163.992188">2000.</tspan>
+                            <tspan x="45" y="185.992188"></tspan>
+                            <tspan x="45" y="207.992188">Distribuce Energií </tspan>
+                        </text>
+                        <text id="2000" font-family="Syncopate-Bold, Syncopate" font-size="25" font-weight="bold" line-spacing="40" letter-spacing="-1" fill="#FFFFFF">
+                            <tspan x="45" y="74.9921875">2000</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-8" transform="translate(554.000000, 286.000000)">
+                        <polygon id="Rectangle-Copy" fill="#A52143" transform="translate(131.500000, 85.302734) scale(1, -1) translate(-131.500000, -85.302734) " points="0 -7.45802346e-14 263 0 263 150.605469 15.0546875 150.605469 0 170.605469"></polygon>
+                        <text id="Lisovna-plastů-Medic" font-family="OpenSans-Regular, Open Sans" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="45" y="119.992188">Lisovna plastů-Medical</tspan>
+                        </text>
+                        <text id="2008" font-family="Syncopate-Bold, Syncopate" font-size="25" font-weight="bold" line-spacing="40" letter-spacing="-1" fill="#FFFFFF">
+                            <tspan x="45" y="74.9921875">2008</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
