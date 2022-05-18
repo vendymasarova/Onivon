@@ -23,6 +23,10 @@
     pointer-events: none;
   }
 
+  svg {
+    display: block;
+  }
+
   &--primary {
     background-color: $white;
     color: $primary;
@@ -64,9 +68,5 @@
       background-color: $secondary;
       border: 1px solid $secondary;
     }
-  }
-
-  svg {
-    display: block;
   }
 }

@@ -52,6 +52,10 @@
 @import "./01_base/utilities";
 @import "./01_base/global";
 
+@import "swiper/swiper";
+@import 'lightgallery/scss/lightgallery-bundle.scss';
+
+
 // Atoms
 @import "./02_atoms/_a-btn";
 @import "./02_atoms/_a-title";
@@ -81,6 +85,8 @@
 @import "./03_molecules/_m-form";
 @import "./03_molecules/_m-white-box";
 @import "./03_molecules/_m-accordion";
+@import "./03_molecules/_m-carousel";
+@import "./03_molecules/_m-swiper";
 
 // Organisms
 @import "./04_organisms/_o-hello";
