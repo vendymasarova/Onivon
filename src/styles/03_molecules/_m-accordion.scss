@@ -14,6 +14,11 @@
   }
 
   &__about {
+    @include media-breakpoint-down(md) {
+      font-size: 0.875rem;
+      gap: 5px;
+    }
+
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
@@ -25,6 +30,9 @@
   &__btn {
     @include media-breakpoint-up(lg) {
       flex-direction: row;;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
     }
 
     padding: 40px;
@@ -54,11 +62,9 @@
       box-shadow: none;
     }
 
-
     &::after {
       display: none;
     }
-
   }
 
   &__body {

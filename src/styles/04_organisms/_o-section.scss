@@ -21,8 +21,6 @@ $section-padding-horizontal: 9.375rem;
     }
     @include media-breakpoint-down(lg) {
       margin-top: calc(-#{$section-padding-horizontal});
-
-
     }
   }
 

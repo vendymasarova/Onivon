@@ -10325,7 +10325,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 .a-title--footer {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: var(--bs-font-sans-serif);
   color: #fff;
   font-weight: 700;
 }
@@ -11248,6 +11248,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
          column-gap: 40px;
   }
 }
+.a-perex a {
+  color: #2C2C2C;
+  text-decoration: none;
+}
 .a-perex--sm {
   max-width: 24.0625rem;
 }
@@ -12040,6 +12044,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   font-size: 15px;
   font-family: var(--bs-font-sans-serif);
 }
+@media (max-width: 767.98px) {
+  .m-accordion__about {
+    font-size: 0.875rem;
+    gap: 5px;
+  }
+}
 .m-accordion__btn {
   padding: 40px;
   width: auto;
@@ -12053,6 +12063,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (min-width: 992px) {
   .m-accordion__btn {
     flex-direction: row;
+  }
+}
+@media (max-width: 767.98px) {
+  .m-accordion__btn {
+    font-size: 1rem;
   }
 }
 .m-accordion__btn:focus {

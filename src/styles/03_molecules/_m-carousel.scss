@@ -1,10 +1,6 @@
 $carouselBtnSize: 80px;
 .m-carousel {
 
-  // &__slide {
-  //   padding-left: 53px;
-  // }
-
   &__figure {
 
     img {
@@ -71,7 +67,6 @@ $carouselBtnSize: 80px;
 .lg-backdrop {
   background-color: rgba($color: $gray-800, $alpha: 0.9);
 }
-
 
 .lg-counter {
   display: none;
