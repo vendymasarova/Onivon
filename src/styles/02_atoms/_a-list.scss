@@ -1,3 +1,5 @@
+$list-line-height: 35px;
+
 .a-list {
   list-style: none;
   padding-left: 0;
@@ -9,7 +11,7 @@
   }
 
   li {
-    line-height: 35px;
+    line-height: $list-line-height;
   }
 
   a {
@@ -60,7 +62,7 @@
         content: "";
         width: 20px;
         height: 1px;
-        top: 25%;
+        top: calc($list-line-height / 2);
         background: $gray-800;
       }
 
@@ -79,8 +81,13 @@
 
       &::before {
         position: absolute;
-        content: url(../img/check.svg);
-        top: 25%;
+        height: 18px;
+        width: 23px;
+        background-image: url(../img/check.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        content: "";
+        top: 10px;
       }
 
       span {
@@ -91,8 +98,9 @@
   }
 
   &--col {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(md) {
       column-count: 2;
+      column-gap: 40px;
     }
   }
 }

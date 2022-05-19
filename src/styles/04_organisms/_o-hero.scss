@@ -70,12 +70,23 @@
   }
 
   &--full {
+    @include media-breakpoint-up(lg) {
+      padding-top: 12.5rem;
+      padding-bottom: 21.25rem;
+    }
+
+    padding-bottom: 15rem;
+
 
     #{$root}__figure {
       right: 0;
       max-width: 100%;
 
       img {
+        @include media-breakpoint-up(md) {
+          object-position: right;
+        }
+
         object-position: bottom;
       }
 

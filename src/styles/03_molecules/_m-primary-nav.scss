@@ -44,7 +44,7 @@
     }
 
     list-style: none;
-    padding: 39px;
+    padding: 38px;
     position: relative;
 
     &--action {
@@ -69,7 +69,7 @@
       font-size: 1rem;
 
       &:hover {
-        color: white;
+        color:$white;
 
         &::before {
           position: absolute;

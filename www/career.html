@@ -18,7 +18,8 @@
         <meta name="theme-color" content="#fafafa">
     </head>
     <body>
-        <header class="o-header">
+        <header class="o-header js--stickyNav">
+            <div class="o-header__overlay js-overlay"></div>
             <a href="#" class="a-brand">
                 <img src="./img/brand-icon.svg" alt="">
             </a>
@@ -96,12 +97,12 @@
 
         <section class="o-section o-section--light">
             <div class="a-container">
-                <div class="m-accordion accordion" id="jobOffer1">
+                <div class="m-accordion accordion">
                     <div class="accordion-item m-accordion__item">
                       <div class="m-accordion__header accordion-header" id="jobOne">
-                          <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer1" aria-expanded="false" aria-controls="jobOffer1">
                             Operátor montáže
-                            </button>
+
                             <div class="m-accordion__about">
                                 <div class="m-accordin__info">
                                     <img src="./img/icon-suitcase.svg" alt="">
@@ -116,71 +117,72 @@
                                     <span>Němčice nad Hanou</span>
                                 </div>
                             </div>
-                      </div>
-                      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
-                        <div class="accordion-body m-accordion__body">
-                            <div class="row">
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>nabízíme</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>Nástup možný ihned, 1 až 3 směnný provoz</span>
-                                        </li>
-                                        <li>
-                                            <span>Příplatky za přesčasy</span>
-                                        </li>
-                                        <li>
-                                            <span>Moderní zázemí společnosti s více jak 20-letou působností v oboru</span>
-                                        </li>
-                                        <li>
-                                            <span>Možnost profesního růstu a odborné realizace</span>
-                                        </li>
-                                        <li>
-                                            <span>Odpovídající finanční ohodnocení</span>
-                                        </li>
-                                    </ul>
+                            </button>
+                        </div>
+                        <div id="jobOffer1" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
+                            <div class="accordion-body m-accordion__body">
+                                <div class="row">
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>nabízíme</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>Nástup možný ihned, 1 až 3 směnný provoz</span>
+                                            </li>
+                                            <li>
+                                                <span>Příplatky za přesčasy</span>
+                                            </li>
+                                            <li>
+                                                <span>Moderní zázemí společnosti s více jak 20-letou působností v oboru</span>
+                                            </li>
+                                            <li>
+                                                <span>Možnost profesního růstu a odborné realizace</span>
+                                            </li>
+                                            <li>
+                                                <span>Odpovídající finanční ohodnocení</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>náplň práce</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>práce v kolektivu</span>
+                                            </li>
+                                            <li>
+                                                <span>2 – směnný provoz</span>
+                                            </li>
+                                            <li>
+                                                <span>prémie za kvalitu</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>Požadujeme</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>Manuální zručnost</span>
+                                            </li>
+                                            <li>
+                                                <span>Pečlivost, spolehlivost, flexibilita</span>
+                                            </li>
+                                            <li>
+                                                <span>Praxe v oboru výhodou</span>
+                                            </li>
+                                            <li>
+                                                <span>Ochota se učit novým věcem</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>náplň práce</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>práce v kolektivu</span>
-                                        </li>
-                                        <li>
-                                            <span>2 – směnný provoz</span>
-                                        </li>
-                                        <li>
-                                            <span>prémie za kvalitu</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>Požadujeme</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>Manuální zručnost</span>
-                                        </li>
-                                        <li>
-                                            <span>Pečlivost, spolehlivost, flexibilita</span>
-                                        </li>
-                                        <li>
-                                            <span>Praxe v oboru výhodou</span>
-                                        </li>
-                                        <li>
-                                            <span>Ochota se učit novým věcem</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item m-accordion__item">
                       <div class="m-accordion__header accordion-header" id="jobOne">
-                          <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer2" aria-expanded="false" aria-controls="jobOffer2">
                             Operátor montáže
-                            </button>
                             <div class="m-accordion__about">
                                 <div class="m-accordin__info">
                                     <img src="./img/icon-suitcase.svg" alt="">
@@ -195,8 +197,9 @@
                                     <span>Němčice nad Hanou</span>
                                 </div>
                             </div>
+                        </button>
                       </div>
-                      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
+                      <div id="jobOffer2" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
                         <div class="accordion-body m-accordion__body">
                             <div class="row">
                                 <div class="col-md-6 mt-5">
@@ -269,12 +272,12 @@
             </div>
         </section>
 
-        <section class="o-section">
+        <section class="o-section js--unpinWhiteBox">
             <div class="a-container">
                 <h2 class="a-title o-section__title">Kontakty</h2>
                 <div class="row mt-5">
                     <div class="col-lg-5">
-                        <div class="m-box">
+                        <div class="m-box js--pinBox">
                             <div class="m-box__header">
                                 <h3 class="m-box__name">Sídlo společnosti</h3>
                             </div>

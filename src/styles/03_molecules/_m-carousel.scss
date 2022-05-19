@@ -1,9 +1,9 @@
 $carouselBtnSize: 80px;
 .m-carousel {
 
-  &__slide {
-    padding-left: 53px;
-  }
+  // &__slide {
+  //   padding-left: 53px;
+  // }
 
   &__figure {
 
@@ -60,6 +60,13 @@ $carouselBtnSize: 80px;
   }
 }
 
+.swiper-slide-next {
+  padding-left: 70px;
+}
+
+.swiper-slide-active {
+  border-right: 1px solid $gray-600;
+}
 
 .lg-backdrop {
   background-color: rgba($color: $gray-800, $alpha: 0.9);

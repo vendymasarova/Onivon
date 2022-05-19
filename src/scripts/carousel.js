@@ -7,12 +7,17 @@ const carousel =  () => {
 
     new Swiper(swiper, {
       modules: [Navigation],
-      slidesPerView: 2,
+      slidesPerView: 1,
       speed: 1200,
       navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
       },
+      breakpoints: {
+        960: {
+          slidesPerView: 2,
+        },
+      }
     });
 
 }

@@ -1,21 +1,29 @@
+$m-swiper-btn-size:       80px !default;
+
 .m-swiper {
   position: relative;
+  margin-top: 5rem;
 
   &__controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position:absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $primary;
+    @include media-breakpoint-up(xxl) {
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% + #{$m-swiper-btn-size * 2} + 53px);
+      position:absolute;
+      top: 50%;
+      left:calc(#{-$m-swiper-btn-size} - 53px);
+      transform: translateY(-50%);
+      color: $primary;
+    }
+
+    display: none;
   }
 
   &__btn {
     border: 1px solid rgba($color: $primary, $alpha: 0.1);
     background: transparent;
-    width: 80px;
-    height: 80px;
+    width: $m-swiper-btn-size;
+    height: $m-swiper-btn-size;
     border-radius: 50%;
     padding: 0;
     display: flex;
