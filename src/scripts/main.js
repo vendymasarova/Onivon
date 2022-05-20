@@ -1,9 +1,6 @@
 import '@@/styles/main.scss';
 
 import {Dropdown, Collapse} from "bootstrap/dist/js/bootstrap.esm";
-import Swiper from 'swiper';
-import 'swiper/css';
-
 
 import mainNav from './mainNav';
 import carousel from './carousel';
