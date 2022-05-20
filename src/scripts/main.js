@@ -9,6 +9,7 @@ import mainNav from './mainNav';
 import carousel from './carousel';
 import stickyHeaderOverlay from './stickyHeaderOverlay';
 import downloadGallery from './downloadGallery';
+import smoothImageMove from './smoothImageMove';
 
 window.addEventListener('load', function() {
   Array.from(document.querySelectorAll('.dropdown-toggle'))
@@ -40,6 +41,8 @@ window.addEventListener('load', function() {
   carousel();
   stickyHeaderOverlay();
   downloadGallery();
+  smoothImageMove ();
+
 });
 
 

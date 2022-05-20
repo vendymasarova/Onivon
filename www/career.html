@@ -66,60 +66,58 @@
         </header>
 
 
-        <section class="o-hero o-hero--dark">
+        <section class="o-hero o-hero--dark js--imageParallax">
             <div class="a-container">
                 <div class="o-hero__body">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <h1 class="a-title o-hero__title">Přidejte se <span>k nám</span></h1>
-                            <div class="a-icon">
-                                <img src="./img/icon-join.png" srcseet="./img/icon-join@2x.png 2x" alt="icon join">
-                            </div>
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="m-box m-box--full o-hero__box">
-                                <h3 class="a-title a-title--bold a-title--bold-white mb-3 m-box__title">Zaměstnanecké benefity</h3>
-                                <ul class="a-list a-list--check a-list--white mb-5">
-                                    <li> <span>Dovolená navíc</span> </li>
-                                    <li> <span>2 x ročně pololetní odměny dle výsledků práce</span> </li>
-                                    <li> <span>Příspěvky na závodní stravování</span> </li>
-                                    <li> <span>Příspěvek na dopravu (dojíždění)</span> </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <h1 class="a-title o-hero__title">Přidejte se <span>k nám</span></h1>
+                    <div class="a-icon">
+                        <img src="./img/icon-join.png" srcseet="./img/icon-join@2x.png 2x" alt="icon join">
                     </div>
                 </div>
-            </div>
-            <div class="o-hero__figure">
-                <img src="./img/hero-img-003.png" srcset="./img/hero-img-003@2x.png 2x" alt="">
+                <div class="o-hero__figure js--imageParallax__image">
+                    <img src="./img/hero-img-003.png" srcset="./img/hero-img-003@2x.png 2x" alt="">
+                </div>
             </div>
         </section>
 
-        <section class="o-section o-section--light">
+        <section class="o-section o-section--light pb-0">
             <div class="a-container">
-                <div class="m-accordion accordion">
-                    <div class="accordion-item m-accordion__item">
-                      <div class="m-accordion__header accordion-header" id="jobOne">
-                          <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer1" aria-expanded="false" aria-controls="jobOffer1">
-                            Operátor montáže
+                <div class="m-box m-box--full o-section--offset o-section--offset-right">
+                    <h3 class="a-title a-title--bold a-title--bold-white mb-3 m-box__title">Zaměstnanecké benefity</h3>
+                    <ul class="a-list a-list--check a-list--white mb-5">
+                        <li> <span>Dovolená navíc</span> </li>
+                        <li> <span>2 x ročně pololetní odměny dle výsledků práce</span> </li>
+                        <li> <span>Příspěvky na závodní stravování</span> </li>
+                        <li> <span>Příspěvek na dopravu (dojíždění)</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                            <div class="m-accordion__about">
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-suitcase.svg" alt="">
-                                    <span>částečný úvazek</span>
+        <section class="o-section o-section--light pt-5">
+            <div class="a-container">
+                <div class="m-accordion accordion" id="jobOffers">
+                    <div class="accordion-item m-accordion__item">
+                        <div class="m-accordion__header accordion-header" id="headingJobOne">
+                            <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer1" aria-expanded="false" aria-controls="jobOffer1">
+                                Operátor montáže
+                                <div class="m-accordion__about">
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-suitcase.svg" alt="">
+                                        <span>částečný úvazek</span>
+                                    </div>
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-badge.svg" alt="">
+                                        <span>Zdravotnictvi</span>
+                                    </div>
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-pin.svg" alt="">
+                                        <span>Němčice nad Hanou</span>
+                                    </div>
                                 </div>
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-badge.svg" alt="">
-                                    <span>Zdravotnictvi</span>
-                                </div>
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-pin.svg" alt="">
-                                    <span>Němčice nad Hanou</span>
-                                </div>
-                            </div>
                             </button>
                         </div>
-                        <div id="jobOffer1" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
+                        <div id="jobOffer1" class="accordion-collapse collapse show" aria-labelledby="headingJobOne" data-bs-parent="#jobOffers">
                             <div class="accordion-body m-accordion__body">
                                 <div class="row">
                                     <div class="col-md-6 mt-5">
@@ -174,89 +172,86 @@
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item m-accordion__item">
-                      <div class="m-accordion__header accordion-header" id="jobOne">
-                        <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer2" aria-expanded="false" aria-controls="jobOffer2">
-                            Operátor montáže
-                            <div class="m-accordion__about">
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-suitcase.svg" alt="">
-                                    <span>částečný úvazek</span>
+                        <div class="m-accordion__header accordion-header" id="headingJobTwo">
+                            <button class="m-accordion__btn accordion-button a-title a-title--bold" type="button" data-bs-toggle="collapse" data-bs-target="#jobOffer2" aria-expanded="false" aria-controls="jobOffer2">
+                                Operátor montáže
+                                <div class="m-accordion__about">
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-suitcase.svg" alt="">
+                                        <span>částečný úvazek</span>
+                                    </div>
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-badge.svg" alt="">
+                                        <span>Zdravotnictvi</span>
+                                    </div>
+                                    <div class="m-accordin__info">
+                                        <img src="./img/icon-pin.svg" alt="">
+                                        <span>Němčice nad Hanou</span>
+                                    </div>
                                 </div>
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-badge.svg" alt="">
-                                    <span>Zdravotnictvi</span>
-                                </div>
-                                <div class="m-accordin__info">
-                                    <img src="./img/icon-pin.svg" alt="">
-                                    <span>Němčice nad Hanou</span>
-                                </div>
-                            </div>
-                        </button>
-                      </div>
-                      <div id="jobOffer2" class="accordion-collapse collapse show" aria-labelledby="jobOne" data-bs-parent="#jobOffer1">
-                        <div class="accordion-body m-accordion__body">
-                            <div class="row">
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>nabízíme</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>Nástup možný ihned, 1 až 3 směnný provoz</span>
-                                        </li>
-                                        <li>
-                                            <span>Příplatky za přesčasy</span>
-                                        </li>
-                                        <li>
-                                            <span>Moderní zázemí společnosti s více jak 20-letou působností v oboru</span>
-                                        </li>
-                                        <li>
-                                            <span>Možnost profesního růstu a odborné realizace</span>
-                                        </li>
-                                        <li>
-                                            <span>Odpovídající finanční ohodnocení</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>náplň práce</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>práce v kolektivu</span>
-                                        </li>
-                                        <li>
-                                            <span>2 – směnný provoz</span>
-                                        </li>
-                                        <li>
-                                            <span>prémie za kvalitu</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 mt-5">
-                                    <h3 class="a-title a-title--bold"><span>Požadujeme</span></h3>
-                                    <ul class="a-list a-list--dash">
-                                        <li>
-                                            <span>Manuální zručnost</span>
-                                        </li>
-                                        <li>
-                                            <span>Pečlivost, spolehlivost, flexibilita</span>
-                                        </li>
-                                        <li>
-                                            <span>Praxe v oboru výhodou</span>
-                                        </li>
-                                        <li>
-                                            <span>Ochota se učit novým věcem</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                            </button>
                         </div>
-                      </div>
+                        <div id="jobOffer2" class="accordion-collapse collapse show" aria-labelledby="headingJobTwo" data-bs-parent="#jobOffers">
+                            <div class="accordion-body m-accordion__body">
+                                <div class="row">
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>nabízíme</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>Nástup možný ihned, 1 až 3 směnný provoz</span>
+                                            </li>
+                                            <li>
+                                                <span>Příplatky za přesčasy</span>
+                                            </li>
+                                            <li>
+                                                <span>Moderní zázemí společnosti s více jak 20-letou působností v oboru</span>
+                                            </li>
+                                            <li>
+                                                <span>Možnost profesního růstu a odborné realizace</span>
+                                            </li>
+                                            <li>
+                                                <span>Odpovídající finanční ohodnocení</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>náplň práce</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>práce v kolektivu</span>
+                                            </li>
+                                            <li>
+                                                <span>2 – směnný provoz</span>
+                                            </li>
+                                            <li>
+                                                <span>prémie za kvalitu</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mt-5">
+                                        <h3 class="a-title a-title--bold"><span>Požadujeme</span></h3>
+                                        <ul class="a-list a-list--dash">
+                                            <li>
+                                                <span>Manuální zručnost</span>
+                                            </li>
+                                            <li>
+                                                <span>Pečlivost, spolehlivost, flexibilita</span>
+                                            </li>
+                                            <li>
+                                                <span>Praxe v oboru výhodou</span>
+                                            </li>
+                                            <li>
+                                                <span>Ochota se učit novým věcem</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,7 +263,6 @@
                 <div class="a-perex">
                     <p>Své strukturované životopisy prosím, zasílejte na emailovou adresu <strong><a href="mailto:personalistika@onivon.cz">personalistika@onivon.cz</a></strong></p>
                 </div>
-
             </div>
         </section>
 

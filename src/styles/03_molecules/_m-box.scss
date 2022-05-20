@@ -26,6 +26,21 @@
     background-color: $gray-800;
   }
 
+  &--full {
+    @include media-breakpoint-down(xl) {
+      min-height: auto;
+      max-width: 100%;
+      text-align: left;
+      padding-left: 2.5rem;
+      top: 0;
+    }
+
+    min-height: auto;
+    max-width: 626px;
+    padding-left: 4.5rem;
+    padding-right: 6.25rem;
+  }
+
   &--dotted {
     padding-top: 2.25rem;
     position: relative;

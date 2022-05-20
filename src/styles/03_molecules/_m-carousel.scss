@@ -57,7 +57,9 @@ $carouselBtnSize: 80px;
 }
 
 .swiper-slide-next {
-  padding-left: 70px;
+  position: relative;
+  left: 70px;
+  animation: positionAnim 1.2s ease;
 }
 
 .swiper-slide-active {
@@ -70,4 +72,16 @@ $carouselBtnSize: 80px;
 
 .lg-counter {
   display: none;
+}
+
+
+@keyframes positionAnim {
+
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 70px;
+  }
 }

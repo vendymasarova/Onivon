@@ -22,6 +22,16 @@ $section-padding-horizontal: 9.375rem;
     @include media-breakpoint-down(lg) {
       margin-top: calc(-#{$section-padding-horizontal});
     }
+
+    &-right {
+      @include media-breakpoint-up(xl) {
+        margin-left: auto;
+        margin-top: calc(-#{$section-padding-horizontal} - 374px);
+      }
+      @include media-breakpoint-down(xl) {
+        margin-top: calc(-#{$section-padding-horizontal} + 50px);
+      }
+    }
   }
 
   &__title {

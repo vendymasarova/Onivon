@@ -10,6 +10,7 @@
   background-color: $blue;
   color: $white;
   position: relative;
+  overflow: hidden;
 
   &--dark {
     background-color: $gray-800;
@@ -132,23 +133,6 @@
   &__body {
     position: relative;
     z-index: 10;
-  }
-
-  &__box {
-    @include media-breakpoint-down(xl) {
-      min-height: auto;
-      max-width: 100%;
-      text-align: left;
-      padding-left: 2.5rem;
-      top: 0;
-    }
-
-    min-height: auto;
-    max-width: 626px;
-    padding-left: 4.5rem;
-    padding-right: 6.25rem;
-    position: relative;
-    top: 120px;
   }
 
   &__figure {
