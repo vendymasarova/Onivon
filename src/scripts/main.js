@@ -2,6 +2,7 @@ import '@@/styles/main.scss';
 
 import {Dropdown, Collapse} from "bootstrap/dist/js/bootstrap.esm";
 
+
 import mainNav from './mainNav';
 import carousel from './carousel';
 import stickyHeaderOverlay from './stickyHeaderOverlay';
@@ -32,14 +33,11 @@ window.addEventListener('load', function() {
       })
   })()
 
-
-
   mainNav();
   carousel();
   stickyHeaderOverlay();
   downloadGallery();
   smoothImageMove ();
-
 });
 
 

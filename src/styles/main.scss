@@ -7,6 +7,10 @@
 
 @import "./01_base/variables";
 
+@import "animate-sass/animate";
+$use-fadeIn: true;
+$use-fadeOut: true;
+
 // Layout & components
 @import "bootstrap/scss/root.scss";
 @import "bootstrap/scss/reboot.scss";

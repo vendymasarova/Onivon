@@ -1,7 +1,4 @@
 import lightGallery from 'lightgallery';
-import lgThumbnail from 'lightgallery/plugins/thumbnail'
-import lgZoom from 'lightgallery/plugins/zoom'
-import lgHash from 'lightgallery/plugins/hash'
 
 const downloadGallery = () => {
 
@@ -12,12 +9,11 @@ const downloadGallery = () => {
   gallery.forEach(item => {
 
     lightGallery(item), {
-      plugins: [lgZoom, lgThumbnail, lgHash],
       licenseKey: 'your_license_key',
       speed: 500,
+
     };
   });
-
 
 
 

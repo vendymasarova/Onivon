@@ -15,3 +15,29 @@
   font-style: normal;
   font-display: swap;
 }
+
+.swiper-slide-next {
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    left: 70px;
+    animation: positionAnim 1.2s ease;
+  }
+}
+
+.swiper-slide-active {
+  @include media-breakpoint-up(lg) {
+    border-right: 1px solid $gray-600;
+  }
+}
+
+html.lg-on {
+  overflow: hidden;
+}
+
+.lg-backdrop {
+  background-color: rgba($color: $gray-800, $alpha: 0.9) !important;
+}
+
+.lg-counter {
+  display: none !important;
+}

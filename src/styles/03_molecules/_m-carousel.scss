@@ -9,8 +9,11 @@ $carouselBtnSize: 80px;
   }
 
   &__body {
+    @include media-breakpoint-up(sm) {
+      gap: 54px;
+    }
     display: flex;
-    gap: 54px;
+    gap: 20px;
     align-items: center;
   }
 
@@ -55,25 +58,6 @@ $carouselBtnSize: 80px;
     }
   }
 }
-
-.swiper-slide-next {
-  position: relative;
-  left: 70px;
-  animation: positionAnim 1.2s ease;
-}
-
-.swiper-slide-active {
-  border-right: 1px solid $gray-600;
-}
-
-.lg-backdrop {
-  background-color: rgba($color: $gray-800, $alpha: 0.9);
-}
-
-.lg-counter {
-  display: none;
-}
-
 
 @keyframes positionAnim {
 
