@@ -1,4 +1,4 @@
-$m-swiper-btn-size:       80px !default;
+$m-swiper-btn-size: 80px !default;
 
 .m-swiper {
   position: relative;
@@ -9,9 +9,9 @@ $m-swiper-btn-size:       80px !default;
       display: flex;
       justify-content: space-between;
       width: calc(100% + #{$m-swiper-btn-size * 2} + 53px);
-      position:absolute;
+      position: absolute;
       top: 50%;
-      left:calc(#{-$m-swiper-btn-size} - 53px);
+      left: calc(#{-$m-swiper-btn-size} - 53px);
       transform: translateY(-50%);
       color: $primary;
     }
@@ -20,7 +20,7 @@ $m-swiper-btn-size:       80px !default;
   }
 
   &__btn {
-    border: 1px solid rgba($color: $primary, $alpha: 0.1);
+    border: 1px solid rgba($color: $primary, $alpha: .1);
     background: transparent;
     width: $m-swiper-btn-size;
     height: $m-swiper-btn-size;
@@ -30,18 +30,14 @@ $m-swiper-btn-size:       80px !default;
     justify-content: center;
     align-items: center;
     color: $primary;
-    z-index:99;
+    z-index: 99;
 
     &--next {
 
       svg {
-
         transform: rotate(180deg);
       }
     }
   }
 }
 
-.swiper-button-disabled {
-  opacity: 0.5;
-}

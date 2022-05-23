@@ -1,19 +1,23 @@
 @font-face {
-  font-family: 'Syncopate';
-  src: url('../fonts/Syncopate-Bold.woff2') format('woff2'),
-      url('../fonts/Syncopate-Bold.woff') format('woff');
+  font-family: "Syncopate";
+  src: url("../fonts/Syncopate-Bold.woff2") format("woff2"),
+    url("../fonts/Syncopate-Bold.woff") format("woff");
   font-weight: $font-weight-bold;
   font-style: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Syncopate';
-  src: url('../fonts/Syncopate-Regular.woff2') format('woff2'),
-      url('../fonts/Syncopate-Regular.woff') format('woff');
+  font-family: "Syncopate";
+  src: url("../fonts/Syncopate-Regular.woff2") format("woff2"),
+    url("../fonts/Syncopate-Regular.woff") format("woff");
   font-weight: $font-weight-normal;
   font-style: normal;
   font-display: swap;
+}
+
+.swiper-button-disabled {
+  opacity: .5;
 }
 
 .swiper-slide-next {

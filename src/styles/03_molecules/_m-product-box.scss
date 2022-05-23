@@ -6,18 +6,19 @@
     align-items: center;
     padding-top: 9.375rem;
     padding-bottom: 9.375rem;
-    border-left: 1px solid rgba($color: $white, $alpha: 0.1);
+    border-left: 1px solid rgba($color: $white, $alpha: .1);
 
     &__perex {
       max-width: 246px;
     }
 
     &__about {
-      margin-bottom: 150px
+      margin-bottom: 150px;
     }
   }
+
   @include media-breakpoint-down(xl) {
-    flex-direction: column
+    flex-direction: column;
   }
 
   position: relative;
@@ -29,7 +30,7 @@
   align-items: center;
   text-align: center;
   min-height: 100%;
-  border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
+  border-bottom: 1px solid rgba($color: $white, $alpha: .1);
 
   &:hover {
 
@@ -50,7 +51,7 @@
 
   &__body {
     z-index: 20;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
   }
 
   &__about {
@@ -93,13 +94,12 @@
     right: 0;
     z-index: 2;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 
     img {
       display: block;
       width: 100%;
       height: 100%;
-      -o-object-fit: cover;
       object-fit: cover;
     }
 

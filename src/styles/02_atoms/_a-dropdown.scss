@@ -1,5 +1,6 @@
 .a-dropdown {
   @include media-breakpoint-down (lg) {
+
     &__menu {
       position: relative !important;
       border: none;

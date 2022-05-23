@@ -7,19 +7,16 @@ $list-line-height: 35px;
 
   &__title {
     width: 100%;
-    display: inline-block
+    display: inline-block;
   }
 
   li {
     line-height: $list-line-height;
   }
 
-  a {
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: $white;
+  &--dark {
 
-    &:hover {
+    a {
       color: $gray-800;
     }
   }
@@ -35,6 +32,16 @@ $list-line-height: 35px;
     }
   }
 
+  a {
+    text-decoration: none;
+    transition: all .3s ease;
+    color: $white;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+
   &--row {
     display: flex;
 
@@ -43,18 +50,11 @@ $list-line-height: 35px;
     }
   }
 
-  &--dark {
-
-    a {
-      color: $gray-800;
-    }
-  }
-
   &--dash {
     color: $gray-800;
 
     li {
-      margin-bottom: 1.25rem ;
+      margin-bottom: 1.25rem;
       position: relative;
 
       &::before {
@@ -76,15 +76,15 @@ $list-line-height: 35px;
   &--check {
 
     li {
-      margin-bottom: 1.25rem ;
+      margin-bottom: 1.25rem;
       position: relative;
 
       &::before {
         position: absolute;
         height: 18px;
         width: 23px;
-        background-image: url(../img/check.svg);
-        background-size:contain;
+        background-image: url("../img/check.svg");
+        background-size: contain;
         background-repeat: no-repeat;
         content: "";
         top: 10px;

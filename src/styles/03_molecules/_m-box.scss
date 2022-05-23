@@ -3,6 +3,7 @@
     max-width: 100%;
     text-align: center;
   }
+
   @include media-breakpoint-up(lg) {
     position: sticky;
     top: calc(100px + 5rem);
@@ -46,11 +47,11 @@
     position: relative;
     top: 0;
 
-    &:before {
+    &::before {
       position: absolute;
       top: 0;
       content: "";
-      background-image: url(../img/dots.svg);
+      background-image: url("../img/dots.svg");
       background-position: 50% -50%;
       background-repeat: no-repeat;
       background-size: contain;
@@ -69,7 +70,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 30px;
-    border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+    border-bottom: 1px solid rgba($color: $white, $alpha: .2);
     text-transform: uppercase;
     color: $white;
   }

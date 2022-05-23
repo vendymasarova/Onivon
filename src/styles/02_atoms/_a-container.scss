@@ -1,4 +1,4 @@
-$containerLastIndex: length($container-max-widths);
+$containerLastIndex: list.length($container-max-widths);
 $containerIndex: 0;
 
 .a-container {
@@ -6,6 +6,7 @@ $containerIndex: 0;
 
   @each $breakpoint, $value in $container-max-widths {
     $containerIndex: $containerIndex + 1;
+
     @if $containerLastIndex == $containerIndex {
       max-width: $value;
     } @else {

@@ -1,4 +1,5 @@
 $carouselBtnSize: 80px;
+
 .m-carousel {
 
   &__figure {
@@ -12,6 +13,7 @@ $carouselBtnSize: 80px;
     @include media-breakpoint-up(sm) {
       gap: 54px;
     }
+
     display: flex;
     gap: 20px;
     align-items: center;
@@ -37,7 +39,7 @@ $carouselBtnSize: 80px;
   }
 
   &__btn {
-    border: 1px solid rgba($color: $primary, $alpha: 0.1);
+    border: 1px solid rgba($color: $primary, $alpha: .1);
     background: transparent;
     width: $carouselBtnSize;
     height: $carouselBtnSize;
@@ -47,12 +49,11 @@ $carouselBtnSize: 80px;
     justify-content: center;
     align-items: center;
     color: $primary;
-    z-index:99;
+    z-index: 99;
 
     &--next {
 
       svg {
-
         transform: rotate(180deg);
       }
     }

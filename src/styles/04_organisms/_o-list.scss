@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 .o-list {
   @include media-breakpoint-down(xl) {
@@ -15,9 +15,9 @@
 
   &__col {
     @include media-breakpoint-up(xl) {
-      flex: 0 0 percentage(math.div(1,4));
-      max-width: percentage(math.div(1,4));
-      width: percentage(math.div(1,4));
+      flex: 0 0 math.percentage(math.div(1, 4));
+      max-width: math.percentage(math.div(1, 4));
+      width: math.percentage(math.div(1, 4));
     }
 
     flex: 0 0 auto;

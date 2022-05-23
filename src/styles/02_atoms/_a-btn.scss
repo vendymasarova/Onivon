@@ -10,16 +10,16 @@
   text-transform: uppercase;
   font-family: $headings-font-family;
   padding: 2rem 2.3125rem;
-  border-radius: 0.9375rem;
+  border-radius: .9375rem;
   font-weight: $font-weight-bold;
-  font-size: 0.875rem;
+  font-size: .875rem;
   transition: all .3s ease;
   border: none;
   outline: none;
   text-decoration: if($link-decoration == none, null, none);
 
   &.disabled {
-    opacity: 0.3;
+    opacity: .3;
     pointer-events: none;
   }
 

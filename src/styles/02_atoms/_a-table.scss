@@ -2,7 +2,7 @@
   width: 100%;
 
   &__head {
-    color: rgba($color: $gray-800, $alpha: 0.5);
+    color: rgba($color: $gray-800, $alpha: .5);
     font-size: 14px;
     letter-spacing: 0;
 
@@ -12,7 +12,7 @@
       }
 
       font-weight: $font-weight-normal;
-      border-bottom: 1px solid $gray-600 ;
+      border-bottom: 1px solid $gray-600;
       padding-bottom: 14px;
     }
   }
@@ -20,13 +20,13 @@
   &__body {
 
     tr {
-      border-bottom: 1px solid $gray-600 ;
+      border-bottom: 1px solid $gray-600;
     }
 
     td {
       @include media-breakpoint-up(md) {
         line-height: 35px;
-        fon-size: 1rem;
+        font-size: 1rem;
         padding-left: 30px;
         padding-top: 20px;
         padding-bottom: 20px;

@@ -19,6 +19,7 @@
       color: $secondary;
     }
   }
+
   @include media-breakpoint-up(lg) {
 
     &:hover {
@@ -36,5 +37,5 @@
   align-items: center;
   width: 100px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }

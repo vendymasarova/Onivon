@@ -14,6 +14,7 @@
       color: transparent;
       -webkit-text-stroke: 1px $black;
     }
+
     @supports not (-webkit-text-stroke: 1px $black) {
       color: $black;
     }
@@ -51,9 +52,11 @@
         color: transparent;
         -webkit-text-stroke: 1px $primary;
       }
+
       @supports not (-webkit-text-stroke: 1px $primary) {
         color: $primary;
       }
+
       @include media-breakpoint-down(md) {
         font-size: 3.75rem;
       }

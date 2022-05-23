@@ -17,7 +17,6 @@
       display: block;
       width: 100%;
       height: 100%;
-      -o-object-fit: cover;
       object-fit: cover;
     }
   }
@@ -32,6 +31,7 @@
       font-size: 8rem;
       line-height: 155px;
     }
+
     @include media-breakpoint-up(xl) {
       font-size: 10rem;
     }
@@ -40,7 +40,6 @@
     line-height: 80px;
 
     > span {
-
       @supports (-webkit-text-stroke: 1px $white) {
         color: transparent;
         -webkit-text-stroke: 1px $white;
@@ -77,8 +76,9 @@
       }
 
       @include media-breakpoint-down(sm) {
-        font-size: 2rem
+        font-size: 2rem;
       }
+
       font-size: 5rem;
       margin: 40px 0;
     }
@@ -97,6 +97,7 @@
       @include media-breakpoint-down(sm) {
         align-items: center;
       }
+
       justify-content: center;
       margin-top: 40px;
     }
