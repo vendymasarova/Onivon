@@ -1,52 +1,53 @@
+/* stylelint-disable */
 // Configuration
 
-@import "bootstrap/scss/_functions.scss";
-@import "bootstrap/scss/_variables.scss";
-@import "bootstrap/scss/_mixins.scss";
-@import "bootstrap/scss/_utilities.scss";
+@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/_variables";
+@import "bootstrap/scss/_mixins";
+@import "bootstrap/scss/_utilities";
 
 @import "./01_base/variables";
 
 // Layout & components
-@import "bootstrap/scss/root.scss";
-@import "bootstrap/scss/reboot.scss";
-@import "bootstrap/scss/type.scss";
-@import "bootstrap/scss/images.scss";
-@import "bootstrap/scss/containers.scss";
-@import "bootstrap/scss/grid.scss";
-// @import "bootstrap/scss/tables.scss";
-@import "bootstrap/scss/forms.scss";
-// @import "bootstrap/scss/buttons.scss";
-@import "bootstrap/scss/transitions.scss";
-@import "bootstrap/scss/dropdown.scss";
-// @import "bootstrap/scss/button-group.scss";
-@import "bootstrap/scss/nav.scss";
-@import "bootstrap/scss/navbar.scss";
-@import "bootstrap/scss/forms/validation.scss";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+// @import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/forms/validation";
 
-// @import "bootstrap/scss/card.scss";
-@import "bootstrap/scss/accordion.scss";
-// @import "bootstrap/scss/breadcrumb.scss";
-// @import "bootstrap/scss/pagination.scss";
-// @import "bootstrap/scss/badge.scss";
-// @import "bootstrap/scss/alert.scss";
-// @import "bootstrap/scss/progress.scss";
-// @import "bootstrap/scss/list-group.scss";
-// @import "bootstrap/scss/close.scss";
-// @import "bootstrap/scss/toasts.scss";
-// @import "bootstrap/scss/modal.scss";
-// @import "bootstrap/scss/tooltip.scss";
-// @import "bootstrap/scss/popover.scss";
-// @import "bootstrap/scss/carousel.scss";
-// @import "bootstrap/scss/spinners.scss";
-// @import "bootstrap/scss/offcanvas.scss";
-// @import "bootstrap/scss/placeholders.scss";
+// @import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas";
+// @import "bootstrap/scss/placeholders";
 
 // Helpers
-@import "bootstrap/scss/helpers.scss";
+@import "bootstrap/scss/helpers";
 
 // Utilities
-@import "bootstrap/scss/utilities/api.scss";
+@import "bootstrap/scss/utilities/api";
 
 // Base
 @import "./01_base/utilities";
@@ -55,7 +56,7 @@
 @import "swiper/swiper";
 
 $lg-path-images: '../img';
-@import 'lightgallery/scss/lightgallery-bundle.scss';
+@import 'lightgallery/scss/lightgallery-bundle';
 
 
 // Atoms
@@ -97,3 +98,4 @@ $lg-path-images: '../img';
 @import "./04_organisms/_o-header";
 @import "./04_organisms/_o-footer";
 @import "./04_organisms/_o-list";
+/* stylelint-enable */
