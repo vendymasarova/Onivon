@@ -55,9 +55,9 @@
 
 @import "swiper/swiper";
 
-$lg-path-images: '../img';
-@import 'lightgallery/scss/lightgallery-bundle';
-
+// $lg-path-images: '../img';
+// @import 'lightgallery/scss/lightgallery-bundle';
+@import 'lightgallery.js/src/sass/lightgallery';
 
 // Atoms
 @import "./02_atoms/_a-btn";
