@@ -1,0 +1,84 @@
+.m-timeline {
+  $root: &;
+
+  height: 500px;
+  color: $white;
+
+  &__line {
+    height: 4px;
+    background-color: $gray-800;
+    top: 50%;
+    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      content: "";
+      background-image: url("../img/timeline-dots.svg");
+      width: 102px;
+      height: 3px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    min-width: 200px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 23px;
+      width: 3px;
+      background-color: $gray-800;
+      left: 0;
+      top: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    background-color: $primary;
+    padding: 35px;
+    bottom: calc(100% + 50px);
+    height: fit-content;
+    width: max-content;
+    min-width: 200px;
+    max-width: 302px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      clip-path: polygon(0 0, 0% 100%, 84% 0);
+      background-color: $primary;
+      bottom: -18px;
+      left: 0;
+    }
+
+    &--bottom {
+      top: calc(100% - (-50px));
+
+      &::before {
+        clip-path: polygon(0 0, 0% 100%, 84% 100%);
+        top: -18px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+
+  &__perex {
+    color: $white;
+  }
+}
