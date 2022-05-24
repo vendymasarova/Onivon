@@ -1,22 +1,46 @@
 .m-timeline {
   $root: &;
 
+  // @include media-breakpoint-up(md) {
+  //   overflow: scroll;
+  // }
+
   height: 500px;
-  color: $white;
 
   &__line {
+    @include media-breakpoint-down(md) {
+      width: 4px;
+
+      // height: 100%;
+      height: auto;
+      left: 50%;
+      top: 0;
+      flex-direction: column;
+    }
+
     height: 4px;
     background-color: $gray-800;
     top: 50%;
     padding: 0;
     list-style-type: none;
     display: inline-flex;
-    width: 100%;
+
+    // width: 100%;
     position: relative;
 
     &::after {
+      @include media-breakpoint-down(md) {
+        width: 102px;
+        height: 3px;
+        bottom: 0;
+        bottom: -51px;
+        left: -51px;
+        transform: translateX(50%);
+        transform: rotate(90deg) translateY(-100%);
+      }
+
       position: absolute;
-      right: 0;
+      right: -102px;
       content: "";
       background-image: url("../img/timeline-dots.svg");
       width: 102px;
@@ -25,25 +49,41 @@
   }
 
   &__item {
+    @include media-breakpoint-down(md) {
+      min-height: 200px;
+    }
+
     position: relative;
     min-width: 200px;
 
     &::before {
+      @include media-breakpoint-down(md) {
+        width: 23px;
+        height: 3px;
+        transform: translateX(-50%);
+      }
+
       position: absolute;
       content: "";
-      height: 23px;
-      width: 3px;
       background-color: $gray-800;
       left: 0;
       top: 0;
+      height: 23px;
+      width: 3px;
       transform: translateY(-50%);
     }
   }
 
   &__content {
+    @include media-breakpoint-down(md) {
+      top: 0;
+      left: 50px;
+    }
+
     position: absolute;
     background-color: $primary;
-    padding: 35px;
+    padding: 38px;
+    padding-top: 50px;
     bottom: calc(100% + 50px);
     height: fit-content;
     width: max-content;
@@ -51,22 +91,41 @@
     max-width: 302px;
 
     &::before {
+      @include media-breakpoint-down(md) {
+        left: -20px;
+        top: 0;
+        transform: rotate(90deg);
+      }
+
       position: absolute;
       content: "";
-      height: 18px;
-      width: 18px;
+      height: 20px;
+      width: 20px;
       clip-path: polygon(0 0, 0% 100%, 84% 0);
       background-color: $primary;
-      bottom: -18px;
+      bottom: -20px;
       left: 0;
     }
 
     &--bottom {
+      @include media-breakpoint-down(md) {
+        top: 0;
+        right: calc(100% + 50px);
+        left: auto;
+      }
+
       top: calc(100% - (-50px));
 
       &::before {
+        @include media-breakpoint-down(md) {
+          right: -20px;
+          left: auto;
+          top: 0;
+          transform: rotate(90deg);
+        }
+
         clip-path: polygon(0 0, 0% 100%, 84% 100%);
-        top: -18px;
+        top: -20px;
       }
     }
   }
