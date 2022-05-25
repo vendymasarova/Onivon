@@ -7,6 +7,7 @@ import carousel from './carousel';
 import stickyHeaderOverlay from './stickyHeaderOverlay';
 import downloadGallery from './downloadGallery';
 import smoothImageMove from './smoothImageMove';
+import timelineAnimation from './timelineAnimation';
 
 window.addEventListener('load', function() {
   Array.from(document.querySelectorAll('.dropdown-toggle'))
@@ -37,6 +38,7 @@ window.addEventListener('load', function() {
   stickyHeaderOverlay();
   downloadGallery();
   smoothImageMove ();
+  timelineAnimation();
 });
 
 

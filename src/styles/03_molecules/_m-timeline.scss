@@ -8,22 +8,6 @@
     height: 800px;
     width: calc(100% - 113px);
 
-  &::after {
-
-    @include media-breakpoint-down(sm) {
-      width: 30px;
-      right: -30px;
-    }
-
-    position: absolute;
-    content: "";
-    background-image: url("../img/timeline-dots.svg");
-    width: 102px;
-    height: 3px;
-    right: -102px;
-    top: calc(50% + 15px);
-  }
-
   &__wrapper {
     position: relative;
     overflow: scroll;
@@ -34,10 +18,8 @@
     }
   }
 
-  &__line {
-
+  &__list {
     height: 4px;
-    background-color: $gray-800;
     top: 50%;
     padding: 0;
     margin: 0;
@@ -46,9 +28,27 @@
     position: relative;
   }
 
+  &__dots {
+    @include media-breakpoint-down(sm) {
+      width: 30px;
+      right: -30px;
+      top: calc(50% + 14px);
+    }
+
+    position: absolute;
+    height: 3px;
+    width: 102px;
+    top: calc(50% + 14px);
+    right: -102px;
+    background-image: url("../img/timeline-dots.svg");
+    opacity: 0;
+  }
+
   &__item {
     position: relative;
     min-width: 200px;
+    background-color: $gray-800;
+    height: 4px;
 
     &::before {
       position: absolute;
