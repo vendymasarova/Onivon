@@ -1,6 +1,6 @@
-import { gsap } from "gsap";
-import { Timeline } from "gsap/gsap-core";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from 'gsap';
+import { Timeline } from 'gsap/gsap-core';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger, Timeline);
 
 const timelineAnimation = () => {
@@ -10,27 +10,27 @@ const timelineAnimation = () => {
 
   gsap.timeline({
     scrollTrigger: {
-      trigger: ".js--timelineAnimation",
+      trigger: '.js--timelineAnimation',
       scrub: true,
       pin: true,
-      start: "top top",
-      end: "+=100%",
+      start: 'top top',
+      end: '+=100%',
       once: true,
     },
   })
   .from(lines, {
   scaleX: 0,
   stagger: 0.6,
-  transformOrigin: "left center",
-  })
+  transformOrigin: 'left center',
+})
+.from(linesContent, {
+  scaleX: 1,
+  opacity: 0,
+  stagger: 0.6,
+}, '<')
   .to(dottedLine, {
     opacity: 1,
   })
-  .from(linesContent, {
-    scaleX: 1,
-    opacity: 0,
-    stagger: 0.6,
-  }, "-=0")
 
   gsap.utils.toArray('.js--timeline-content').forEach(content => {
     gsap.set(content, {
