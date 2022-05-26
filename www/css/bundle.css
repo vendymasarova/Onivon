@@ -11916,7 +11916,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .m-timeline {
   position: relative;
-  height: 800px;
   width: calc(100% - 113px);
 }
 @media (max-width: 575.98px) {
@@ -11948,7 +11947,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: calc(50% + 14px);
   right: -102px;
   background-image: url("../img/timeline-dots.svg");
-  opacity: 0;
+  opacity: 1;
 }
 @media (max-width: 575.98px) {
   .m-timeline__dots {
@@ -11960,10 +11959,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .m-timeline__item {
   position: relative;
   min-width: 200px;
+}
+.m-timeline__line {
+  min-width: 200px;
   background-color: #2C2C2C;
   height: 4px;
+  position: absolute;
+  opacity: 1 !important;
+  transform: scale(1);
 }
-.m-timeline__item::before {
+.m-timeline__line::before {
   position: absolute;
   content: "";
   background-color: #2C2C2C;
@@ -11987,6 +11992,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   max-width: 302px;
   bottom: -100%;
   transform: translateY(-50px);
+  opacity: 1;
 }
 .m-timeline__content::before {
   position: absolute;

@@ -5,7 +5,7 @@
     width: calc(100% - 30px);
   }
     position: relative;
-    height: 800px;
+    // height: 800px;
     width: calc(100% - 113px);
 
   &__wrapper {
@@ -41,14 +41,21 @@
     top: calc(50% + 14px);
     right: -102px;
     background-image: url("../img/timeline-dots.svg");
-    opacity: 0;
+    opacity: 1;
   }
 
   &__item {
     position: relative;
     min-width: 200px;
+  }
+
+  &__line {
+    min-width: 200px;
     background-color: $gray-800;
     height: 4px;
+    position: absolute;
+    opacity: 1 !important;
+    transform: scale(1);
 
     &::before {
       position: absolute;
@@ -74,6 +81,7 @@
     max-width: 302px;
     bottom: -100%;
     transform: translateY(-50px);
+    opacity: 1;
 
     &::before {
       position: absolute;
