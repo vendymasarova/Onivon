@@ -43,18 +43,7 @@ const timelineAnimation = () => {
 
     ScrollTrigger.matchMedia({
 
-      "(min-height: 1000px)": function() {
-
-        // gsap.set(lines, {
-        //   opacity: 1
-        // })
-        // // gsap.set(lines, {
-        // //   scaleX: 0,
-        // //   opacity: 0,
-        // // })
-        // // gsap.set(linesContent, {
-        // //   opacity: 0
-        // // })
+      "(min-width: 900px)": function() {
 
         const anim = gsap.timeline({
           scrollTrigger: {
@@ -63,7 +52,7 @@ const timelineAnimation = () => {
             pin: true,
             start: 'center center',
             end: 'bottom 20%',
-            once: true,
+            // once: true,
             // markers: true,
             defaults: {
               duration: 5,
@@ -75,7 +64,7 @@ const timelineAnimation = () => {
               // self.scroll(scroll);
               anim.progress(1);
             },
-            // anticipatePin: 1,
+            anticipatePin: 1,
           },
         })
         .fromTo(lines,
@@ -88,9 +77,6 @@ const timelineAnimation = () => {
       },
     })
   }
-
-
  }
-
 
 export default timelineAnimation;

@@ -1,3 +1,5 @@
+$list-line-height: 35px;
+
 .a-perex {
   @include media-breakpoint-up(lg) {
 
@@ -21,5 +23,42 @@
 
   &--md {
     max-width: 31.25rem;
+  }
+
+  h2 {
+    @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+    }
+
+    font-size: 1.5625rem;
+    line-height: 35px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 3.125rem;
+  }
+
+  ul {
+    color: $gray-800;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.75rem;
+
+    li {
+      margin-bottom: 1.25rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 1px;
+        top: calc($list-line-height / 2);
+        background: $gray-800;
+      }
+
+      span {
+        padding-left: 3.5rem;
+        display: block;
+      }
+    }
   }
 }
