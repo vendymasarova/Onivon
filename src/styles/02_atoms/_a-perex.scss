@@ -45,6 +45,7 @@ $list-line-height: 35px;
     li {
       margin-bottom: 1.25rem;
       position: relative;
+      padding-left: 3.5rem;
 
       &::before {
         position: absolute;
@@ -53,11 +54,7 @@ $list-line-height: 35px;
         height: 1px;
         top: calc($list-line-height / 2);
         background: $gray-800;
-      }
-
-      span {
-        padding-left: 3.5rem;
-        display: block;
+        left: 0;
       }
     }
   }

@@ -14,6 +14,16 @@ $list-line-height: 35px;
     line-height: $list-line-height;
   }
 
+  a {
+    text-decoration: none;
+    transition: all .3s ease;
+    color: $white;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+
   &--dark {
 
     a {
@@ -32,16 +42,6 @@ $list-line-height: 35px;
     }
   }
 
-  a {
-    text-decoration: none;
-    transition: all .3s ease;
-    color: $white;
-
-    &:hover {
-      color: $gray-800;
-    }
-  }
-
   &--row {
     display: flex;
 
@@ -56,6 +56,7 @@ $list-line-height: 35px;
     li {
       margin-bottom: 1.25rem;
       position: relative;
+      padding-left: 3.5rem;
 
       &::before {
         position: absolute;
@@ -64,11 +65,7 @@ $list-line-height: 35px;
         height: 1px;
         top: calc($list-line-height / 2);
         background: $gray-800;
-      }
-
-      span {
-        padding-left: 3.5rem;
-        display: block;
+        left: 0;
       }
     }
   }
@@ -78,6 +75,7 @@ $list-line-height: 35px;
     li {
       margin-bottom: 1.25rem;
       position: relative;
+      padding-left: 3.5rem;
 
       &::before {
         position: absolute;
@@ -88,11 +86,7 @@ $list-line-height: 35px;
         background-repeat: no-repeat;
         content: "";
         top: 10px;
-      }
-
-      span {
-        padding-left: 3.5rem;
-        display: block;
+        left: 0;
       }
     }
   }
