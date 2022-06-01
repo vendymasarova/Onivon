@@ -48,31 +48,31 @@ const timelineAnimation = () => {
         const anim = gsap.timeline({
           scrollTrigger: {
             trigger: '.js--timeline',
-            scrub: 1,
+            scrub: true,
             pin: true,
             start: 'center center',
-            end: 'bottom 20%',
-            // once: true,
-            // markers: true,
-            defaults: {
-              duration: 5,
+            end: `+=30%`,
+            markers: 'true',
+
+            onEnterBack: self => {
+              console.log("on enter back");
+              anim.killTweensOf([lines, linesContent, dottedLine])
             },
-            onLeave: self => {
-              // let scroll = self.scroll();
+
+            onLeaveBack: self => {
               self.kill();
-              // console.log(scroll);
-              // self.scroll(scroll);
               anim.progress(1);
+              console.log("on leave back");
             },
             anticipatePin: 1,
           },
-        })
-        .fromTo(lines,
+        });
+        anim.fromTo(lines,
           {scaleX: 0, opacity: 0}, {scaleX:1, opacity: 1, stagger: 0.8, transformOrigin: 'left center'}
         )
-        .fromTo(linesContent,
+        anim.fromTo(linesContent,
           {opacity: 0}, {opacity: 1, stagger: 0.8}, '<')
-        .fromTo(dottedLine,
+        anim.fromTo(dottedLine,
           {opacity: 0}, {opacity: 1})
       },
     })
