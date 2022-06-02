@@ -1,6 +1,7 @@
 import '@@/styles/main.scss';
 
 import {Dropdown, Collapse} from "bootstrap/dist/js/bootstrap.esm";
+import 'wowjs';
 
 import mainNav from './mainNav';
 import carousel from './carousel';
@@ -10,6 +11,8 @@ import smoothImageMove from './smoothImageMove';
 import timelineAnimation from './timelineAnimation';
 
 window.addEventListener('load', function() {
+  new WOW().init();
+
   Array.from(document.querySelectorAll('.dropdown-toggle'))
   .forEach(dropdownToggleNode => new Dropdown(dropdownToggleNode));
 
@@ -32,6 +35,8 @@ window.addEventListener('load', function() {
         }, false)
       })
   })()
+
+
 
   mainNav();
   carousel();
