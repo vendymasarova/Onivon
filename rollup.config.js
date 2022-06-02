@@ -34,6 +34,9 @@ export default {
     sourcemap: !production,
     plugins: production && [terser()]
   },
+  moduleContext: {
+    'node_modules/wowjs/dist/wow.js': 'window',
+  },
   plugins: [
     production && del({ targets: [
       'www/css/*',
