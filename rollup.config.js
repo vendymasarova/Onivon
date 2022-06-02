@@ -7,6 +7,7 @@ import alias from '@rollup/plugin-alias';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import strip from '@rollup/plugin-strip';
+import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { babel } from '@rollup/plugin-babel';
@@ -70,7 +71,10 @@ export default {
       '__VUE_PROD_DEVTOOLS__': false,
     }),
     vue(),
-    resolve(),
+    commonjs(),
+    resolve({
+      extensions: ['.js', '.vue']
+    }),
     babel({
       babelHelpers: 'bundled',
       exclude: 'node_modules/**'
