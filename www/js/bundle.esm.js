@@ -7519,7 +7519,7 @@ defineJQueryPlugin(Toast);
 
   })();
 
-}).call(undefined);
+}).call(window);
 
 const mainNav = () => {
   const hamburger = document.querySelector('.js--hamburger');
@@ -22927,7 +22927,7 @@ const timelineAnimation = () => {
         const anim = gsapWithCSS.timeline({
           scrollTrigger: {
             trigger: '.js--timeline',
-            scrub: true,
+            scrub: 2,
             pin: true,
             start: 'center center',
             end: `+=30%`,
@@ -22937,7 +22937,7 @@ const timelineAnimation = () => {
               anim.killTweensOf([lines, linesContent, dottedLine, timelineSection]);
             },
             onLeaveBack: self => {
-              // self.kill();
+              self.kill();
               anim.progress(1);
               console.log("on leave back");
             },
@@ -22951,14 +22951,16 @@ const timelineAnimation = () => {
         }, {
           scaleX: 1,
           opacity: 1,
-          stagger: 0.8,
+          stagger: 1.2,
+          duration: 1.2,
           transformOrigin: 'left center'
         });
         anim.fromTo(linesContent, {
           opacity: 0
         }, {
           opacity: 1,
-          stagger: 0.8
+          stagger: 1.2,
+          duration: 1.2
         }, '<');
         anim.fromTo(dottedLine, {
           opacity: 0
@@ -22971,7 +22973,18 @@ const timelineAnimation = () => {
 };
 
 window.addEventListener('load', function () {
-  new WOW().init();
+  new WOW({
+    boxClass: 'wow',
+    // default
+    animateClass: 'animated',
+    // default
+    offset: 0,
+    // default
+    mobile: true,
+    // default
+    live: true // default
+
+  }).init();
   Array.from(document.querySelectorAll('.dropdown-toggle')).forEach(dropdownToggleNode => new Dropdown(dropdownToggleNode));
   Array.from(document.querySelectorAll('.collapse')).forEach(collapseNode => new Collapse(collapseNode));
 

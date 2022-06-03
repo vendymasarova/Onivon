@@ -61,9 +61,10 @@ const timelineAnimation = () => {
         //   });
 
         const anim = gsap.timeline({
+
           scrollTrigger: {
             trigger: '.js--timeline',
-            scrub: true,
+            scrub: 2,
             pin: true,
             start: 'center center',
             end: `+=30%`,
@@ -75,7 +76,7 @@ const timelineAnimation = () => {
             },
 
             onLeaveBack: self => {
-              // self.kill();
+              self.kill();
               anim.progress(1);
               console.log("on leave back");
             },
@@ -84,10 +85,10 @@ const timelineAnimation = () => {
         });
         // anim.to(timelineSection, {x: -timelineWrapperWidth + w})
         anim.fromTo(lines,
-          {scaleX: 0, opacity: 0}, {scaleX:1, opacity: 1, stagger: 0.8, transformOrigin: 'left center'}
+          {scaleX: 0, opacity: 0}, {scaleX:1, opacity: 1, stagger: 1.2, duration: 1.2, transformOrigin: 'left center'}
         )
         anim.fromTo(linesContent,
-          {opacity: 0}, {opacity: 1, stagger: 0.8}, '<')
+          {opacity: 0}, {opacity: 1, stagger: 1.2, duration: 1.2}, '<')
         anim.fromTo(dottedLine,
           {opacity: 0}, {opacity: 1})
       },

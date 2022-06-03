@@ -11,7 +11,17 @@ import smoothImageMove from './smoothImageMove';
 import timelineAnimation from './timelineAnimation';
 
 window.addEventListener('load', function() {
-  new WOW().init();
+  new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  ).init();
+
+
 
   Array.from(document.querySelectorAll('.dropdown-toggle'))
   .forEach(dropdownToggleNode => new Dropdown(dropdownToggleNode));
